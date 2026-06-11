@@ -53,9 +53,6 @@ server.log
 # Skills directory
 /skills/
 # Video files - only compressed versions tracked (under 100MB GitHub limit)
-public/videos/*.mkv
-public/videos/*.avi
 
 # Downloaded files
 download/
-videos/
