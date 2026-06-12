@@ -182,6 +182,17 @@ const videos: VideoData[] = [
     description: 'Sigewinne from Genshin Impact in this private visit uncensored animation by 3DimmAnimations. December 2024 release.',
     quality: '720p',
   },
+  {
+    id: 'dori-for-the-right-price',
+    title: 'Dori - For The Right Price',
+    series: 'Genshin Impact',
+    duration: '7:00',
+    durationSeconds: 420,
+    isExternal: false,
+    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Dori_For_The_Right_Price.mp4',
+    description: 'Dori from Genshin Impact in this uncensored animation by 3DimmAnimations. June 2023 release featuring Dori in an intimate transaction.',
+    quality: '720p',
+  },
 ]
 
 // ─── Series Colors ────────────────────────────────────────────────────
