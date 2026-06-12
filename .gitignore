@@ -56,6 +56,28 @@ server.log
 
 # Downloaded files
 download/
+# Temp/search files
+*.json
+!package.json
+!package-lock.json
+!components.json
+!tsconfig.json
 
-# Videos served from video-store branch via CDN
+# Download scripts
+download_*.py
+download_*.mjs
+extract_*.sh
+
+# Tool results
+tool-results/
+
+# Torrent files
+*.torrent
+
+# Logs
+*.log
+scan_*.py
+scan_*.sh
+# Video files (hosted on video-store branch)
 public/videos/*.mp4
+videos/*.mp4
