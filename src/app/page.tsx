@@ -27,7 +27,7 @@ import { Slider } from '@/components/ui/slider'
 interface VideoData {
   id: string
   title: string
-  series: 'Takagi-san' | 'Genshin Impact' | 'Honkai Star Rail' | 'Aharen-san'
+  series: 'Takagi-san' | 'Genshin Impact' | 'Honkai Star Rail' | 'Aharen-san' | 'Princess Connect' | 'Cyberpunk'
   duration: string
   durationSeconds: number
   isExternal: boolean
@@ -47,7 +47,7 @@ const videos: VideoData[] = [
     durationSeconds: 170,
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Bunny_Bar_1_Klee.mp4',
-    description: 'Bunny Bar Special Part 1 featuring Klee. 3DimmAnimations classic Bunny Bar series with 720p quality.',
+    description: 'Bunny Bar Special Part 1 featuring Klee. Classic Bunny Bar series by 3DimmAnimations.',
     quality: '360p',
   },
   {
@@ -58,7 +58,7 @@ const videos: VideoData[] = [
     durationSeconds: 225,
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Bunny_Bar_2_Diona.mp4',
-    description: 'Bunny Bar Special Part 2 featuring Diona. The second installment of the popular Bunny Bar series by 3DimmAnimations.',
+    description: 'Bunny Bar Special Part 2 featuring Diona. The second installment of the Bunny Bar series.',
     quality: '360p',
   },
   {
@@ -69,7 +69,7 @@ const videos: VideoData[] = [
     durationSeconds: 263,
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Bunny_Bar_3_Qiqi.mp4',
-    description: 'Bunny Bar Special Part 3 featuring Qiqi. The third installment of the Bunny Bar series by 3DimmAnimations.',
+    description: 'Bunny Bar Special Part 3 featuring Qiqi. The third installment of the Bunny Bar series.',
     quality: '360p',
   },
   {
@@ -80,7 +80,7 @@ const videos: VideoData[] = [
     durationSeconds: 220,
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Hook_Missionary.mp4',
-    description: 'Hook from Honkai Star Rail in a missionary position animation by 3DimmAnimations. November 2023 release.',
+    description: 'Hook from Honkai Star Rail in a missionary position animation by 3DimmAnimations.',
     quality: '360p',
   },
   {
@@ -91,7 +91,7 @@ const videos: VideoData[] = [
     durationSeconds: 345,
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Takagi_Chi_2K.mp4',
-    description: 'Takagi-san and Chii in this heartwarming animation by 3DimmAnimations. Beautiful 2K quality release.',
+    description: 'Takagi-san and Chii family bonding animation by 3DimmAnimations.',
     quality: '360p',
   },
   {
@@ -102,12 +102,90 @@ const videos: VideoData[] = [
     durationSeconds: 390,
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Aharen_4K.mp4',
-    description: 'Aharen-san from Aharen-san wa Hakarenai in 720p quality animation by 3DimmAnimations. Optimized for web streaming.',
+    description: 'Aharen-san and Raidou after class nap animation by 3DimmAnimations.',
     quality: '360p',
+  },
+  {
+    id: 'eula-hilichurl-trouble',
+    title: 'Eula - Hilichurl Trouble',
+    series: 'Genshin Impact',
+    duration: '4:54',
+    durationSeconds: 294,
+    isExternal: false,
+    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Eula_Hilichurl_Trouble.mp4',
+    description: 'Eula encounters hilichurls in the wild. Things start in her favor but quickly take a turn.',
+    quality: '720p',
+  },
+  {
+    id: 'ganyu-forest-trouble',
+    title: 'Ganyu - Forest Trouble',
+    series: 'Genshin Impact',
+    duration: '2:43',
+    durationSeconds: 163,
+    isExternal: false,
+    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Ganyu_Forest_Trouble.mp4',
+    description: 'Ganyu forest fun animation by 3DimmAnimations. High quality 1080p version.',
+    quality: '1080p',
+  },
+  {
+    id: 'hu-tao-riding',
+    title: 'Hu Tao - Riding',
+    series: 'Genshin Impact',
+    duration: '1:56',
+    durationSeconds: 116,
+    isExternal: false,
+    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Hu_Tao_Riding.mp4',
+    description: 'Hu Tao riding animation by 3DimmAnimations. Enhanced 720p quality.',
+    quality: '720p',
+  },
+  {
+    id: 'hu-tao-dimm',
+    title: 'Hu Tao - Dimm',
+    series: 'Genshin Impact',
+    duration: '2:00',
+    durationSeconds: 120,
+    isExternal: false,
+    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Hu_Tao_Dimm.mp4',
+    description: 'Hu Tao animation by 3DimmAnimations. High quality 1080p version.',
+    quality: '1080p',
+  },
+  {
+    id: 'kokkoro-salad',
+    title: "Kokkoro's Salad",
+    series: 'Princess Connect',
+    duration: '6:40',
+    durationSeconds: 400,
+    isExternal: false,
+    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Kokkoro_Salad.mp4',
+    description: "Kokkoro and Yuuki's morning relief animation by 3DimmAnimations. Enhanced 720p quality.",
+    quality: '720p',
+  },
+  {
+    id: 'rebecca-after-party',
+    title: 'Rebecca - After Party',
+    series: 'Cyberpunk',
+    duration: '0:37',
+    durationSeconds: 37,
+    isExternal: false,
+    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Rebecca_After_Party.mp4',
+    description: 'Rebecca after party fun animation by 3DimmAnimations. High quality version.',
+    quality: '1080p',
+  },
+  {
+    id: 'yae-gorou-shenanigans',
+    title: 'Yae & Gorou Shenanigans',
+    series: 'Genshin Impact',
+    duration: '6:00',
+    durationSeconds: 360,
+    isExternal: false,
+    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Yae_Gorou_Shenanigans.mp4',
+    description: 'Yae Miko and Gorou in shenanigans animation by 3DimmAnimations. Enhanced 720p quality.',
+    quality: '720p',
   },
 ]
 
-// ─── Series Colors ────────────────────────────────────────────────────
+
+ ────────────────────────────────────────────────────
 const seriesColors: Record<string, { bg: string; text: string; border: string; gradient: string; glow: string }> = {
   'Takagi-san': {
     bg: 'bg-pink-500/20',
@@ -137,9 +215,23 @@ const seriesColors: Record<string, { bg: string; text: string; border: string; g
     gradient: 'from-emerald-600 to-teal-500',
     glow: 'shadow-emerald-500/25',
   },
+  'Princess Connect': {
+    bg: 'bg-violet-500/20',
+    text: 'text-violet-300',
+    border: 'border-violet-500/30',
+    gradient: 'from-violet-600 to-purple-500',
+    glow: 'shadow-violet-500/25',
+  },
+  'Cyberpunk': {
+    bg: 'bg-cyan-500/20',
+    text: 'text-cyan-300',
+    border: 'border-cyan-500/30',
+    gradient: 'from-cyan-600 to-blue-500',
+    glow: 'shadow-cyan-500/25',
+  },
 }
 
-const filterCategories = ['All', 'Aharen-san', 'Takagi-san', 'Genshin Impact', 'Honkai Star Rail']
+const filterCategories = ['All', 'Genshin Impact', 'Honkai Star Rail', 'Takagi-san', 'Aharen-san', 'Princess Connect', 'Cyberpunk']
 
 // ─── Thumbnail Component ──────────────────────────────────────────────
 function VideoThumbnail({ video, className = '' }: { video: VideoData; className?: string }) {
