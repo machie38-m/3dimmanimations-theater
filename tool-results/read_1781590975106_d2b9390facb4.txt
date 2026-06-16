@@ -1,0 +1,939 @@
+     1→'use client'
+     2→
+     3→import { useState, useRef, useEffect, useCallback } from 'react'
+     4→import { motion, AnimatePresence } from 'framer-motion'
+     5→import {
+     6→  Play,
+     7→  Pause,
+     8→  Volume2,
+     9→  VolumeX,
+    10→  Maximize,
+    11→  Minimize,
+    12→  X,
+    13→  ExternalLink,
+    14→  Clock,
+    15→  Film,
+    16→  Sparkles,
+    17→  SkipForward,
+    18→  SkipBack,
+    19→  Settings,
+    20→  ChevronRight,
+    21→} from 'lucide-react'
+    22→import { Badge } from '@/components/ui/badge'
+    23→import { Button } from '@/components/ui/button'
+    24→import { Slider } from '@/components/ui/slider'
+    25→
+    26→// ─── Types ────────────────────────────────────────────────────────────
+    27→interface VideoData {
+    28→  id: string
+    29→  title: string
+    30→  series: 'Takagi-san' | 'Genshin Impact' | 'Honkai Star Rail' | 'Aharen-san' | 'Princess Connect'
+    31→  duration: string
+    32→  durationSeconds: number
+    33→  isExternal: boolean
+    34→  url?: string
+    35→  file?: string
+    36→  description: string
+    37→  quality?: string
+    38→}
+    39→
+    40→// ─── Video Data ───────────────────────────────────────────────────────
+    41→const videos: VideoData[] = [
+    42→  {
+    43→    id: 'bunny-bar-1-klee',
+    44→    title: 'Bunny Bar Part 1 - Klee',
+    45→    series: 'Genshin Impact',
+    46→    duration: '2:50',
+    47→    durationSeconds: 170,
+    48→    isExternal: false,
+    49→    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Bunny_Bar_1_Klee.mp4',
+    50→    description: 'Bunny Bar Special Part 1 featuring Klee. Classic Bunny Bar series by 3DimmAnimations.',
+    51→    quality: '720p',
+    52→  },
+    53→  {
+    54→    id: 'bunny-bar-2-diona',
+    55→    title: 'Bunny Bar Part 2 - Diona',
+    56→    series: 'Genshin Impact',
+    57→    duration: '3:45',
+    58→    durationSeconds: 225,
+    59→    isExternal: false,
+    60→    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Bunny_Bar_2_Diona.mp4',
+    61→    description: 'Bunny Bar Special Part 2 featuring Diona. The second installment of the Bunny Bar series.',
+    62→    quality: '720p',
+    63→  },
+    64→  {
+    65→    id: 'bunny-bar-3-qiqi',
+    66→    title: 'Bunny Bar Part 3 - Qiqi',
+    67→    series: 'Genshin Impact',
+    68→    duration: '4:23',
+    69→    durationSeconds: 263,
+    70→    isExternal: false,
+    71→    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Bunny_Bar_3_Qiqi.mp4',
+    72→    description: 'Bunny Bar Special Part 3 featuring Qiqi. The third installment of the Bunny Bar series.',
+    73→    quality: '360p',
+    74→  },
+    75→  {
+    76→    id: 'hook-missionary',
+    77→    title: 'Hook - Missionary',
+    78→    series: 'Honkai Star Rail',
+    79→    duration: '3:40',
+    80→    durationSeconds: 220,
+    81→    isExternal: false,
+    82→    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Hook_Missionary.mp4',
+    83→    description: 'Hook from Honkai Star Rail in a missionary position animation by 3DimmAnimations.',
+    84→    quality: '720p',
+    85→  },
+    86→  {
+    87→    id: 'takagi-chii-2k',
+    88→    title: 'Takagi & Chii 2K',
+    89→    series: 'Takagi-san',
+    90→    duration: '5:45',
+    91→    durationSeconds: 345,
+    92→    isExternal: false,
+    93→    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Takagi_Chi_2K.mp4',
+    94→    description: 'Takagi-san and Chii family bonding animation by 3DimmAnimations.',
+    95→    quality: '720p',
+    96→  },
+    97→  {
+    98→    id: 'aharen-4k',
+    99→    title: 'Aharen-san 4K',
+   100→    series: 'Aharen-san',
+   101→    duration: '6:30',
+   102→    durationSeconds: 390,
+   103→    isExternal: false,
+   104→    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Aharen_4K.mp4',
+   105→    description: 'Aharen-san and Raidou after class nap animation by 3DimmAnimations.',
+   106→    quality: '720p',
+   107→  },
+   108→  {
+   109→    id: 'eula-hilichurl-trouble',
+   110→    title: 'Eula - Hilichurl Trouble',
+   111→    series: 'Genshin Impact',
+   112→    duration: '4:54',
+   113→    durationSeconds: 294,
+   114→    isExternal: false,
+   115→    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Eula_Hilichurl_Trouble.mp4',
+   116→    description: 'Eula encounters hilichurls in the wild. Things start in her favor but quickly take a turn.',
+   117→    quality: '720p',
+   118→  },
+   119→  {
+   120→    id: 'ganyu-forest-trouble',
+   121→    title: 'Ganyu - Forest Trouble',
+   122→    series: 'Genshin Impact',
+   123→    duration: '2:43',
+   124→    durationSeconds: 163,
+   125→    isExternal: false,
+   126→    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Ganyu_Forest_Trouble.mp4',
+   127→    description: 'Ganyu forest fun animation by 3DimmAnimations. High quality 1080p version.',
+   128→    quality: '720p',
+   129→  },
+   130→  {
+   131→    id: 'hu-tao-riding',
+   132→    title: 'Hu Tao - Riding',
+   133→    series: 'Genshin Impact',
+   134→    duration: '1:56',
+   135→    durationSeconds: 116,
+   136→    isExternal: false,
+   137→    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Hu_Tao_Riding.mp4',
+   138→    description: 'Hu Tao riding animation by 3DimmAnimations. Enhanced 720p quality.',
+   139→    quality: '720p',
+   140→  },
+   141→  {
+   142→    id: 'hu-tao-dimm',
+   143→    title: 'Hu Tao - Dimm',
+   144→    series: 'Genshin Impact',
+   145→    duration: '2:00',
+   146→    durationSeconds: 120,
+   147→    isExternal: false,
+   148→    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Hu_Tao_Dimm.mp4',
+   149→    description: 'Hu Tao animation by 3DimmAnimations. High quality 1080p version.',
+   150→    quality: '720p',
+   151→  },
+   152→  {
+   153→    id: 'kokkoro-salad',
+   154→    title: "Kokkoro's Salad",
+   155→    series: 'Princess Connect',
+   156→    duration: '6:40',
+   157→    durationSeconds: 400,
+   158→    isExternal: false,
+   159→    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Kokkoro_Salad.mp4',
+   160→    description: "Kokkoro and Yuuki's morning relief animation by 3DimmAnimations. Enhanced 720p quality.",
+   161→    quality: '720p',
+   162→  },
+   163→  {
+   164→    id: 'yae-gorou-shenanigans',
+   165→    title: 'Yae & Gorou Shenanigans',
+   166→    series: 'Genshin Impact',
+   167→    duration: '6:00',
+   168→    durationSeconds: 360,
+   169→    isExternal: false,
+   170→    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Yae_Gorou_Shenanigans.mp4',
+   171→    description: 'Yae Miko and Gorou in shenanigans animation by 3DimmAnimations. Enhanced 720p quality.',
+   172→    quality: '720p',
+   173→  },
+   174→]
+   175→
+   176→// ─── Series Colors ──────────────────────────────────────────────────
+   177→const seriesColors: Record<string, { bg: string; text: string; border: string; gradient: string; glow: string }> = {
+   178→  'Takagi-san': {
+   179→    bg: 'bg-pink-500/20',
+   180→    text: 'text-pink-300',
+   181→    border: 'border-pink-500/30',
+   182→    gradient: 'from-pink-600 to-rose-500',
+   183→    glow: 'shadow-pink-500/25',
+   184→  },
+   185→  'Genshin Impact': {
+   186→    bg: 'bg-orange-500/20',
+   187→    text: 'text-orange-300',
+   188→    border: 'border-orange-500/30',
+   189→    gradient: 'from-orange-600 to-amber-500',
+   190→    glow: 'shadow-orange-500/25',
+   191→  },
+   192→  'Honkai Star Rail': {
+   193→    bg: 'bg-blue-500/20',
+   194→    text: 'text-blue-300',
+   195→    border: 'border-blue-500/30',
+   196→    gradient: 'from-blue-600 to-cyan-500',
+   197→    glow: 'shadow-blue-500/25',
+   198→  },
+   199→  'Aharen-san': {
+   200→    bg: 'bg-emerald-500/20',
+   201→    text: 'text-emerald-300',
+   202→    border: 'border-emerald-500/30',
+   203→    gradient: 'from-emerald-600 to-teal-500',
+   204→    glow: 'shadow-emerald-500/25',
+   205→  },
+   206→  'Princess Connect': {
+   207→    bg: 'bg-violet-500/20',
+   208→    text: 'text-violet-300',
+   209→    border: 'border-violet-500/30',
+   210→    gradient: 'from-violet-600 to-purple-500',
+   211→    glow: 'shadow-violet-500/25',
+   212→  },
+   213→}
+   214→
+   215→const filterCategories = ['All', 'Genshin Impact', 'Honkai Star Rail', 'Takagi-san', 'Aharen-san', 'Princess Connect']
+   216→
+   217→// ─── Thumbnail Component ──────────────────────────────────────────────
+   218→function VideoThumbnail({ video, className = '' }: { video: VideoData; className?: string }) {
+   219→  const colors = seriesColors[video.series]
+   220→  const initial = video.title.charAt(0).toUpperCase()
+   221→
+   222→  return (
+   223→    <div className={`relative overflow-hidden ${className}`}>
+   224→      <div
+   225→        className={`absolute inset-0 bg-gradient-to-br ${colors.gradient} opacity-80`}
+   226→      />
+   227→      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+   228→      {/* Animated pattern overlay */}
+   229→      <div className="absolute inset-0 opacity-10">
+   230→        <div className="absolute inset-0" style={{
+   231→          backgroundImage: 'radial-gradient(circle at 25% 25%, rgba(255,255,255,0.2) 1px, transparent 1px), radial-gradient(circle at 75% 75%, rgba(255,255,255,0.15) 1px, transparent 1px)',
+   232→          backgroundSize: '24px 24px',
+   233→        }} />
+   234→      </div>
+   235→      {/* Large initial letter */}
+   236→      <div className="absolute inset-0 flex items-center justify-center">
+   237→        <span className="text-white/20 font-bold select-none" style={{ fontSize: '8rem', lineHeight: 1 }}>
+   238→          {initial}
+   239→        </span>
+   240→      </div>
+   241→      {/* Play icon overlay */}
+   242→      <div className="absolute inset-0 flex items-center justify-center">
+   243→        <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20 transition-transform group-hover:scale-110">
+   244→          {video.isExternal ? (
+   245→            <ExternalLink className="w-7 h-7 text-white/80" />
+   246→          ) : (
+   247→            <Play className="w-7 h-7 text-white/80 ml-1" />
+   248→          )}
+   249→        </div>
+   250→      </div>
+   251→      {/* Duration badge */}
+   252→      <div className="absolute bottom-2 right-2 bg-black/70 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-md font-mono flex items-center gap-1">
+   253→        <Clock className="w-3 h-3" />
+   254→        {video.duration}
+   255→      </div>
+   256→      {/* Series badge */}
+   257→      <div className="absolute top-2 left-2">
+   258→        <span className={`text-xs px-2 py-0.5 rounded-md font-medium ${colors.bg} ${colors.text} border ${colors.border} backdrop-blur-sm`}>
+   259→          {video.series}
+   260→        </span>
+   261→      </div>
+   262→      {/* External badge */}
+   263→      {video.isExternal && (
+   264→        <div className="absolute top-2 right-2">
+   265→          <span className="text-xs px-2 py-0.5 rounded-md font-medium bg-violet-500/20 text-violet-300 border border-violet-500/30 backdrop-blur-sm flex items-center gap-1">
+   266→            <ExternalLink className="w-3 h-3" />
+   267→            External
+   268→          </span>
+   269→        </div>
+   270→      )}
+   271→    </div>
+   272→  )
+   273→}
+   274→
+   275→// ─── Custom Video Player ──────────────────────────────────────────────
+   276→function VideoPlayer({ video, onClose }: { video: VideoData; onClose: () => void }) {
+   277→  const videoRef = useRef<HTMLVideoElement>(null)
+   278→  const containerRef = useRef<HTMLDivElement>(null)
+   279→  const progressRef = useRef<HTMLDivElement>(null)
+   280→  const controlsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+   281→
+   282→  const [isPlaying, setIsPlaying] = useState(false)
+   283→  const [isMuted, setIsMuted] = useState(false)
+   284→  const [volume, setVolume] = useState(0.8)
+   285→  const [currentTime, setCurrentTime] = useState(0)
+   286→  const [duration, setDuration] = useState(0)
+   287→  const [playbackRate, setPlaybackRate] = useState(1)
+   288→  const [isFullscreen, setIsFullscreen] = useState(false)
+   289→  const [showControls, setShowControls] = useState(true)
+   290→  const [showSpeedMenu, setShowSpeedMenu] = useState(false)
+   291→  const [isBuffering, setIsBuffering] = useState(false)
+   292→
+   293→  const formatTime = (seconds: number) => {
+   294→    const mins = Math.floor(seconds / 60)
+   295→    const secs = Math.floor(seconds % 60)
+   296→    return `${mins}:${secs.toString().padStart(2, '0')}`
+   297→  }
+   298→
+   299→  const handlePlayPause = useCallback(() => {
+   300→    const v = videoRef.current
+   301→    if (!v) return
+   302→    if (v.paused) {
+   303→      v.play().catch(() => {})
+   304→    } else {
+   305→      v.pause()
+   306→    }
+   307→  }, [])
+   308→
+   309→  const handleSeek = useCallback((value: number[]) => {
+   310→    const v = videoRef.current
+   311→    if (!v) return
+   312→    v.currentTime = value[0]
+   313→    setCurrentTime(value[0])
+   314→  }, [])
+   315→
+   316→  const handleVolumeChange = useCallback((value: number[]) => {
+   317→    const v = videoRef.current
+   318→    if (!v) return
+   319→    const vol = value[0]
+   320→    v.volume = vol
+   321→    setVolume(vol)
+   322→    setIsMuted(vol === 0)
+   323→  }, [])
+   324→
+   325→  const toggleMute = useCallback(() => {
+   326→    const v = videoRef.current
+   327→    if (!v) return
+   328→    v.muted = !v.muted
+   329→    setIsMuted(v.muted)
+   330→  }, [])
+   331→
+   332→  const toggleFullscreen = useCallback(() => {
+   333→    const container = containerRef.current
+   334→    if (!container) return
+   335→    if (!document.fullscreenElement) {
+   336→      container.requestFullscreen().catch(() => {})
+   337→    } else {
+   338→      document.exitFullscreen().catch(() => {})
+   339→    }
+   340→  }, [])
+   341→
+   342→  const changeSpeed = useCallback((speed: number) => {
+   343→    const v = videoRef.current
+   344→    if (!v) return
+   345→    v.playbackRate = speed
+   346→    setPlaybackRate(speed)
+   347→    setShowSpeedMenu(false)
+   348→  }, [])
+   349→
+   350→  const skip = useCallback((seconds: number) => {
+   351→    const v = videoRef.current
+   352→    if (!v) return
+   353→    v.currentTime = Math.min(Math.max(v.currentTime + seconds, 0), v.duration)
+   354→  }, [])
+   355→
+   356→  const handleProgressClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+   357→    const v = videoRef.current
+   358→    const bar = progressRef.current
+   359→    if (!v || !bar) return
+   360→    const rect = bar.getBoundingClientRect()
+   361→    const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width))
+   362→    v.currentTime = ratio * v.duration
+   363→  }, [])
+   364→
+   365→  const scheduleHideControls = useCallback(() => {
+   366→    if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current)
+   367→    controlsTimeoutRef.current = setTimeout(() => {
+   368→      setShowControls(false)
+   369→    }, 3000)
+   370→  }, [])
+   371→
+   372→  const showControlsTemporarily = useCallback(() => {
+   373→    setShowControls(true)
+   374→    if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current)
+   375→    if (isPlaying) {
+   376→      scheduleHideControls()
+   377→    }
+   378→  }, [isPlaying, scheduleHideControls])
+   379→
+   380→  // Keyboard support
+   381→  useEffect(() => {
+   382→    const handleKeyDown = (e: KeyboardEvent) => {
+   383→      switch (e.key) {
+   384→        case 'Escape':
+   385→          onClose()
+   386→          break
+   387→        case ' ':
+   388→          e.preventDefault()
+   389→          handlePlayPause()
+   390→          break
+   391→        case 'ArrowLeft':
+   392→          skip(-10)
+   393→          break
+   394→        case 'ArrowRight':
+   395→          skip(10)
+   396→          break
+   397→        case 'f':
+   398→          toggleFullscreen()
+   399→          break
+   400→        case 'm':
+   401→          toggleMute()
+   402→          break
+   403→      }
+   404→    }
+   405→    window.addEventListener('keydown', handleKeyDown)
+   406→    return () => window.removeEventListener('keydown', handleKeyDown)
+   407→  }, [onClose, handlePlayPause, skip, toggleFullscreen, toggleMute])
+   408→
+   409→  // Video events
+   410→  useEffect(() => {
+   411→    const v = videoRef.current
+   412→    if (!v) return
+   413→    const onPlay = () => {
+   414→      setIsPlaying(true)
+   415→      scheduleHideControls()
+   416→    }
+   417→    const onPause = () => {
+   418→      setIsPlaying(false)
+   419→      setShowControls(true)
+   420→      if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current)
+   421→    }
+   422→    const onTimeUpdate = () => setCurrentTime(v.currentTime)
+   423→    const onLoadedMetadata = () => setDuration(v.duration)
+   424→    const onWaiting = () => setIsBuffering(true)
+   425→    const onPlaying = () => setIsBuffering(false)
+   426→
+   427→    v.addEventListener('play', onPlay)
+   428→    v.addEventListener('pause', onPause)
+   429→    v.addEventListener('timeupdate', onTimeUpdate)
+   430→    v.addEventListener('loadedmetadata', onLoadedMetadata)
+   431→    v.addEventListener('waiting', onWaiting)
+   432→    v.addEventListener('playing', onPlaying)
+   433→
+   434→    return () => {
+   435→      v.removeEventListener('play', onPlay)
+   436→      v.removeEventListener('pause', onPause)
+   437→      v.removeEventListener('timeupdate', onTimeUpdate)
+   438→      v.removeEventListener('loadedmetadata', onLoadedMetadata)
+   439→      v.removeEventListener('waiting', onWaiting)
+   440→      v.removeEventListener('playing', onPlaying)
+   441→    }
+   442→  }, [scheduleHideControls])
+   443→
+   444→  // Fullscreen change listener
+   445→  useEffect(() => {
+   446→    const handler = () => setIsFullscreen(!!document.fullscreenElement)
+   447→    document.addEventListener('fullscreenchange', handler)
+   448→    return () => document.removeEventListener('fullscreenchange', handler)
+   449→  }, [])
+   450→
+   451→
+   452→  const progress = duration > 0 ? (currentTime / duration) * 100 : 0
+   453→
+   454→  return (
+   455→    <motion.div
+   456→      initial={{ opacity: 0 }}
+   457→      animate={{ opacity: 1 }}
+   458→      exit={{ opacity: 0 }}
+   459→      className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex items-center justify-center"
+   460→      onClick={(e) => {
+   461→        if (e.target === e.currentTarget) onClose()
+   462→      }}
+   463→    >
+   464→      <div
+   465→        ref={containerRef}
+   466→        className="relative w-full h-full flex items-center justify-center"
+   467→        onMouseMove={showControlsTemporarily}
+   468→      >
+   469→        {/* Video Element */}
+   470→        <video
+   471→          ref={videoRef}
+   472→          src={video.file}
+   473→          className="w-full h-full object-contain"
+   474→          onClick={handlePlayPause}
+   475→          playsInline
+   476→          volume={volume}
+   477→        />
+   478→
+   479→        {/* Buffering Spinner */}
+   480→        {isBuffering && (
+   481→          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+   482→            <div className="w-16 h-16 border-4 border-violet-500/30 border-t-violet-500 rounded-full animate-spin" />
+   483→          </div>
+   484→        )}
+   485→
+   486→        {/* Center play button on pause */}
+   487→        <AnimatePresence>
+   488→          {!isPlaying && !isBuffering && (
+   489→            <motion.div
+   490→              initial={{ opacity: 0, scale: 0.8 }}
+   491→              animate={{ opacity: 1, scale: 1 }}
+   492→              exit={{ opacity: 0, scale: 1.2 }}
+   493→              className="absolute inset-0 flex items-center justify-center pointer-events-none"
+   494→            >
+   495→              <div className="w-24 h-24 rounded-full bg-violet-600/30 backdrop-blur-md flex items-center justify-center border border-violet-400/30">
+   496→                <Play className="w-12 h-12 text-white ml-1" />
+   497→              </div>
+   498→            </motion.div>
+   499→          )}
+   500→        </AnimatePresence>
+   501→
+   502→        {/* Controls Overlay */}
+   503→        <AnimatePresence>
+   504→          {showControls && (
+   505→            <motion.div
+   506→              initial={{ opacity: 0 }}
+   507→              animate={{ opacity: 1 }}
+   508→              exit={{ opacity: 0 }}
+   509→              transition={{ duration: 0.2 }}
+   510→              className="absolute inset-0 flex flex-col justify-between pointer-events-none"
+   511→            >
+   512→              {/* Top bar */}
+   513→              <div className="bg-gradient-to-b from-black/80 to-transparent p-4 md:p-6 pointer-events-auto">
+   514→                <div className="flex items-center justify-between">
+   515→                  <div className="flex items-center gap-3">
+   516→                    <Button
+   517→                      variant="ghost"
+   518→                      size="icon"
+   519→                      onClick={onClose}
+   520→                      className="text-white hover:bg-white/10 rounded-full"
+   521→                    >
+   522→                      <X className="w-6 h-6" />
+   523→                    </Button>
+   524→                    <div>
+   525→                      <h2 className="text-white font-semibold text-lg">{video.title}</h2>
+   526→                      <p className="text-white/60 text-sm">{video.series} • 3DimmAnimations</p>
+   527→                    </div>
+   528→                  </div>
+   529→                </div>
+   530→              </div>
+   531→
+   532→              {/* Bottom controls */}
+   533→              <div className="bg-gradient-to-t from-black/80 to-transparent p-4 md:p-6 pointer-events-auto">
+   534→                {/* Progress bar */}
+   535→                <div
+   536→                  ref={progressRef}
+   537→                  className="relative w-full h-2 bg-white/20 rounded-full cursor-pointer group mb-4"
+   538→                  onClick={handleProgressClick}
+   539→                >
+   540→                  <div
+   541→                    className="absolute left-0 top-0 h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-full transition-all"
+   542→                    style={{ width: `${progress}%` }}
+   543→                  />
+   544→                  <div
+   545→                    className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+   546→                    style={{ left: `calc(${progress}% - 8px)` }}
+   547→                  />
+   548→                </div>
+   549→
+   550→                {/* Control buttons */}
+   551→                <div className="flex items-center justify-between">
+   552→                  <div className="flex items-center gap-2">
+   553→                    {/* Skip back */}
+   554→                    <Button
+   555→                      variant="ghost"
+   556→                      size="icon"
+   557→                      onClick={() => skip(-10)}
+   558→                      className="text-white hover:bg-white/10 rounded-full"
+   559→                    >
+   560→                      <SkipBack className="w-5 h-5" />
+   561→                    </Button>
+   562→
+   563→                    {/* Play/Pause */}
+   564→                    <Button
+   565→                      variant="ghost"
+   566→                      size="icon"
+   567→                      onClick={handlePlayPause}
+   568→                      className="text-white hover:bg-white/10 rounded-full w-12 h-12"
+   569→                    >
+   570→                      {isPlaying ? <Pause className="w-7 h-7" /> : <Play className="w-7 h-7 ml-0.5" />}
+   571→                    </Button>
+   572→
+   573→                    {/* Skip forward */}
+   574→                    <Button
+   575→                      variant="ghost"
+   576→                      size="icon"
+   577→                      onClick={() => skip(10)}
+   578→                      className="text-white hover:bg-white/10 rounded-full"
+   579→                    >
+   580→                      <SkipForward className="w-5 h-5" />
+   581→                    </Button>
+   582→
+   583→                    {/* Volume */}
+   584→                    <div className="flex items-center gap-2 ml-2">
+   585→                      <Button
+   586→                        variant="ghost"
+   587→                        size="icon"
+   588→                        onClick={toggleMute}
+   589→                        className="text-white hover:bg-white/10 rounded-full"
+   590→                      >
+   591→                        {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+   592→                      </Button>
+   593→                      <div className="w-24 hidden sm:block">
+   594→                        <Slider
+   595→                          value={[isMuted ? 0 : volume]}
+   596→                          min={0}
+   597→                          max={1}
+   598→                          step={0.01}
+   599→                          onValueChange={handleVolumeChange}
+   600→                          className="cursor-pointer"
+   601→                        />
+   602→                      </div>
+   603→                    </div>
+   604→
+   605→                    {/* Time display */}
+   606→                    <span className="text-white/80 text-sm font-mono ml-3 hidden sm:inline">
+   607→                      {formatTime(currentTime)} / {formatTime(duration)}
+   608→                    </span>
+   609→                  </div>
+   610→
+   611→                  <div className="flex items-center gap-2">
+   612→                    {/* Speed control */}
+   613→                    <div className="relative">
+   614→                      <Button
+   615→                        variant="ghost"
+   616→                        size="sm"
+   617→                        onClick={() => setShowSpeedMenu(!showSpeedMenu)}
+   618→                        className="text-white hover:bg-white/10 rounded-full font-mono"
+   619→                      >
+   620→                        <Settings className="w-4 h-4 mr-1" />
+   621→                        {playbackRate}x
+   622→                      </Button>
+   623→                      <AnimatePresence>
+   624→                        {showSpeedMenu && (
+   625→                          <motion.div
+   626→                            initial={{ opacity: 0, y: 10 }}
+   627→                            animate={{ opacity: 1, y: 0 }}
+   628→                            exit={{ opacity: 0, y: 10 }}
+   629→                            className="absolute bottom-full right-0 mb-2 bg-black/90 backdrop-blur-md border border-white/10 rounded-lg p-2 min-w-[100px]"
+   630→                          >
+   631→                            {[0.5, 0.75, 1, 1.25, 1.5, 2].map((speed) => (
+   632→                              <button
+   633→                                key={speed}
+   634→                                onClick={() => changeSpeed(speed)}
+   635→                                className={`w-full text-left px-3 py-1.5 text-sm rounded-md transition-colors ${
+   636→                                  playbackRate === speed
+   637→                                    ? 'bg-violet-600 text-white'
+   638→                                    : 'text-white/70 hover:bg-white/10 hover:text-white'
+   639→                                }`}
+   640→                              >
+   641→                                {speed}x
+   642→                              </button>
+   643→                            ))}
+   644→                          </motion.div>
+   645→                        )}
+   646→                      </AnimatePresence>
+   647→                    </div>
+   648→
+   649→                    {/* Fullscreen */}
+   650→                    <Button
+   651→                      variant="ghost"
+   652→                      size="icon"
+   653→                      onClick={toggleFullscreen}
+   654→                      className="text-white hover:bg-white/10 rounded-full"
+   655→                    >
+   656→                      {isFullscreen ? <Minimize className="w-5 h-5" /> : <Maximize className="w-5 h-5" />}
+   657→                    </Button>
+   658→                  </div>
+   659→                </div>
+   660→              </div>
+   661→            </motion.div>
+   662→          )}
+   663→        </AnimatePresence>
+   664→      </div>
+   665→    </motion.div>
+   666→  )
+   667→}
+   668→
+   669→// ─── Main Page ────────────────────────────────────────────────────────
+   670→export default function Home() {
+   671→  const [activeFilter, setActiveFilter] = useState('All')
+   672→  const [playingVideo, setPlayingVideo] = useState<VideoData | null>(null)
+   673→
+   674→  const filteredVideos = activeFilter === 'All'
+   675→    ? videos
+   676→    : videos.filter((v) => v.series === activeFilter)
+   677→
+   678→  const featuredVideo = videos[videos.length - 1] // Most recently added
+   679→
+   680→  const handleVideoClick = (video: VideoData) => {
+   681→    if (video.isExternal && video.url) {
+   682→      window.open(video.url, '_blank', 'noopener,noreferrer')
+   683→    } else {
+   684→      setPlayingVideo(video)
+   685→    }
+   686→  }
+   687→
+   688→  return (
+   689→    <div className="min-h-screen bg-[#0a0a0f] text-white">
+   690→      {/* Ambient background effects */}
+   691→      <div className="fixed inset-0 pointer-events-none overflow-hidden">
+   692→        <div className="absolute top-0 left-1/4 w-96 h-96 bg-violet-600/8 rounded-full blur-[128px]" />
+   693→        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-fuchsia-600/6 rounded-full blur-[128px]" />
+   694→        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/4 rounded-full blur-[200px]" />
+   695→      </div>
+   696→
+   697→      {/* Header */}
+   698→      <header className="relative z-10 border-b border-white/5">
+   699→        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+   700→          <div className="flex items-center gap-3">
+   701→            {/* Logo */}
+   702→            <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-violet-600 to-fuchsia-500 flex items-center justify-center shadow-lg shadow-violet-500/25">
+   703→              <Film className="w-5 h-5 text-white" />
+   704→              <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-violet-400/20 to-fuchsia-400/20 animate-pulse" />
+   705→            </div>
+   706→            <div>
+   707→              <h1 className="text-xl font-bold bg-gradient-to-r from-violet-400 via-fuchsia-400 to-violet-400 bg-clip-text text-transparent">
+   708→                3DimmAnimations Theater
+   709→              </h1>
+   710→              <p className="text-xs text-white/40 font-medium tracking-wider uppercase">
+   711→                Premium Animation Collection
+   712→              </p>
+   713→            </div>
+   714→          </div>
+   715→          <div className="flex items-center gap-2">
+   716→            <Badge variant="outline" className="border-violet-500/30 text-violet-300 bg-violet-500/10">
+   717→              <Sparkles className="w-3 h-3 mr-1" />
+   718→              {videos.length} Videos
+   719→            </Badge>
+   720→          </div>
+   721→        </div>
+   722→      </header>
+   723→
+   724→      <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+   725→        {/* Featured Section */}
+   726→        <section className="mb-10">
+   727→          <div className="flex items-center gap-2 mb-4">
+   728→            <Sparkles className="w-5 h-5 text-violet-400" />
+   729→            <h2 className="text-lg font-semibold text-white/90">Featured</h2>
+   730→          </div>
+   731→          <motion.div
+   732→            whileHover={{ scale: 1.005 }}
+   733→            transition={{ type: 'spring', stiffness: 300 }}
+   734→            className="group relative overflow-hidden rounded-2xl border border-white/5 cursor-pointer"
+   735→            onClick={() => handleVideoClick(featuredVideo)}
+   736→          >
+   737→            <div className="relative h-64 sm:h-80 md:h-96">
+   738→              <VideoThumbnail video={featuredVideo} className="absolute inset-0" />
+   739→              {/* Gradient overlay for text */}
+   740→              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+   741→              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+   742→                <div className="max-w-xl">
+   743→                  <Badge className={`mb-3 ${seriesColors[featuredVideo.series].bg} ${seriesColors[featuredVideo.series].text} border ${seriesColors[featuredVideo.series].border}`}>
+   744→                    {featuredVideo.series}
+   745→                  </Badge>
+   746→                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-violet-300 transition-colors">
+   747→                    {featuredVideo.title}
+   748→                  </h3>
+   749→                  <p className="text-white/60 text-sm md:text-base mb-4 line-clamp-2">
+   750→                    {featuredVideo.description}
+   751→                  </p>
+   752→                  <div className="flex items-center gap-3">
+   753→                    <Button
+   754→                      size="lg"
+   755→                      className="bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-500 hover:to-fuchsia-500 text-white border-0 shadow-lg shadow-violet-500/25"
+   756→                    >
+   757→                      {featuredVideo.isExternal ? (
+   758→                        <>
+   759→                          <ExternalLink className="w-5 h-5 mr-2" />
+   760→                          Watch on External Site
+   761→                        </>
+   762→                      ) : (
+   763→                        <>
+   764→                          <Play className="w-5 h-5 mr-2" />
+   765→                          Play Now
+   766→                        </>
+   767→                      )}
+   768→                    </Button>
+   769→                    <span className="text-white/40 text-sm flex items-center gap-1">
+   770→                      <Clock className="w-4 h-4" />
+   771→                      {featuredVideo.duration}
+   772→                    </span>
+   773→                  </div>
+   774→                </div>
+   775→              </div>
+   776→            </div>
+   777→            {/* Hover glow effect */}
+   778→            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+   779→              <div className={`absolute inset-0 rounded-2xl ${seriesColors[featuredVideo.series].glow} shadow-2xl`} />
+   780→            </div>
+   781→          </motion.div>
+   782→        </section>
+   783→
+   784→        {/* Filter Buttons */}
+   785→        <section className="mb-8">
+   786→          <div className="flex flex-wrap gap-2">
+   787→            {filterCategories.map((category) => {
+   788→              const isActive = activeFilter === category
+   789→              const count = category === 'All'
+   790→                ? videos.length
+   791→                : videos.filter((v) => v.series === category).length
+   792→              return (
+   793→                <Button
+   794→                  key={category}
+   795→                  variant={isActive ? 'default' : 'outline'}
+   796→                  onClick={() => setActiveFilter(category)}
+   797→                  className={`rounded-full transition-all duration-300 ${
+   798→                    isActive
+   799→                      ? 'bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white border-0 shadow-lg shadow-violet-500/20'
+   800→                      : 'bg-white/5 text-white/60 border-white/10 hover:bg-white/10 hover:text-white hover:border-white/20'
+   801→                  }`}
+   802→                >
+   803→                  {category}
+   804→                  <span className={`ml-2 text-xs px-1.5 py-0.5 rounded-full ${
+   805→                    isActive ? 'bg-white/20' : 'bg-white/10'
+   806→                  }`}>
+   807→                    {count}
+   808→                  </span>
+   809→                </Button>
+   810→              )
+   811→            })}
+   812→          </div>
+   813→        </section>
+   814→
+   815→        {/* Video Gallery Grid */}
+   816→        <section>
+   817→          <div className="flex items-center gap-2 mb-6">
+   818→            <Film className="w-5 h-5 text-violet-400" />
+   819→            <h2 className="text-lg font-semibold text-white/90">
+   820→              {activeFilter === 'All' ? 'All Videos' : activeFilter}
+   821→            </h2>
+   822→            <ChevronRight className="w-4 h-4 text-white/30" />
+   823→            <span className="text-white/40 text-sm">{filteredVideos.length} videos</span>
+   824→          </div>
+   825→
+   826→          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+   827→            <AnimatePresence mode="popLayout">
+   828→              {filteredVideos.map((video, index) => {
+   829→                const colors = seriesColors[video.series]
+   830→                return (
+   831→                  <motion.div
+   832→                    key={video.id}
+   833→                    layout
+   834→                    initial={{ opacity: 0, y: 20 }}
+   835→                    animate={{ opacity: 1, y: 0 }}
+   836→                    exit={{ opacity: 0, scale: 0.95 }}
+   837→                    transition={{ duration: 0.3, delay: index * 0.05 }}
+   838→                    className="group cursor-pointer"
+   839→                    onClick={() => handleVideoClick(video)}
+   840→                  >
+   841→                    <div className={`relative overflow-hidden rounded-xl border border-white/5 bg-white/[0.02] backdrop-blur-sm transition-all duration-300 hover:border-white/10 hover:bg-white/[0.04] hover:shadow-xl ${colors.glow}`}>
+   842→                      {/* Thumbnail */}
+   843→                      <div className="relative aspect-video overflow-hidden">
+   844→                        <VideoThumbnail video={video} className="absolute inset-0 transition-transform duration-500 group-hover:scale-105" />
+   845→                      </div>
+   846→
+   847→                      {/* Content */}
+   848→                      <div className="p-4">
+   849→                        <div className="flex items-start justify-between gap-2">
+   850→                          <div className="flex-1 min-w-0">
+   851→                            <h3 className="font-semibold text-white/90 group-hover:text-violet-300 transition-colors truncate">
+   852→                              {video.title}
+   853→                            </h3>
+   854→                            <p className="text-white/40 text-sm mt-1 line-clamp-2">
+   855→                              {video.description}
+   856→                            </p>
+   857→                          </div>
+   858→                          {video.isExternal && (
+   859→                            <ExternalLink className="w-4 h-4 text-violet-400 shrink-0 mt-1" />
+   860→                          )}
+   861→                        </div>
+   862→
+   863→                        <div className="flex items-center gap-2 mt-3">
+   864→                          <span className={`text-xs px-2 py-0.5 rounded-md ${colors.bg} ${colors.text} border ${colors.border}`}>
+   865→                            {video.series}
+   866→                          </span>
+   867→                          <span className="text-white/30 text-xs">•</span>
+   868→                          <span className="text-white/40 text-xs flex items-center gap-1">
+   869→                            <Clock className="w-3 h-3" />
+   870→                            {video.duration}
+   871→                          </span>
+   872→                          {video.quality && (
+   873→                            <>
+   874→                              <span className="text-white/30 text-xs">•</span>
+   875→                              <span className="text-xs px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-300 border border-emerald-500/20">
+   876→                                {video.quality}
+   877→                              </span>
+   878→                            </>
+   879→                          )}
+   880→                          {video.isExternal && (
+   881→                            <>
+   882→                              <span className="text-white/30 text-xs">•</span>
+   883→                              <span className="text-xs px-1.5 py-0.5 rounded bg-violet-500/15 text-violet-300 border border-violet-500/20">
+   884→                                External
+   885→                              </span>
+   886→                            </>
+   887→                          )}
+   888→                        </div>
+   889→                      </div>
+   890→
+   891→                      {/* Hover glow effect on the card border */}
+   892→                      <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+   893→                        <div className="absolute -inset-px rounded-xl bg-gradient-to-r from-violet-500/20 via-fuchsia-500/20 to-violet-500/20" />
+   894→                      </div>
+   895→                    </div>
+   896→                  </motion.div>
+   897→                )
+   898→              })}
+   899→            </AnimatePresence>
+   900→          </div>
+   901→
+   902→          {/* Empty state */}
+   903→          {filteredVideos.length === 0 && (
+   904→            <div className="text-center py-20">
+   905→              <Film className="w-12 h-12 text-white/20 mx-auto mb-4" />
+   906→              <p className="text-white/40 text-lg">No videos found for this category</p>
+   907→            </div>
+   908→          )}
+   909→        </section>
+   910→
+   911→        {/* Footer */}
+   912→        <footer className="mt-16 pt-8 border-t border-white/5 pb-8">
+   913→          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+   914→            <div className="flex items-center gap-2">
+   915→              <div className="w-6 h-6 rounded-md bg-gradient-to-br from-violet-600 to-fuchsia-500 flex items-center justify-center">
+   916→                <Film className="w-3 h-3 text-white" />
+   917→              </div>
+   918→              <span className="text-white/40 text-sm">3DimmAnimations Theater</span>
+   919→            </div>
+   920→            <p className="text-white/20 text-xs">
+   921→              All animations are created by 3DimmAnimations. This is a fan-made gallery.
+   922→            </p>
+   923→          </div>
+   924→        </footer>
+   925→      </main>
+   926→
+   927→      {/* Video Player Modal */}
+   928→      <AnimatePresence>
+   929→        {playingVideo && !playingVideo.isExternal && (
+   930→          <VideoPlayer
+   931→            video={playingVideo}
+   932→            onClose={() => setPlayingVideo(null)}
+   933→          />
+   934→        )}
+   935→      </AnimatePresence>
+   936→    </div>
+   937→  )
+   938→}
+   939→

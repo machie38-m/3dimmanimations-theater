@@ -1,0 +1,502 @@
+     1→     1→     1→'use client'
+     2→     2→     2→
+     3→     3→     3→import { useState, useRef, useEffect, useCallback } from 'react'
+     4→     4→     4→import { motion, AnimatePresence } from 'framer-motion'
+     5→     5→     5→import {
+     6→     6→     6→  Play,
+     7→     7→     7→  Pause,
+     8→     8→     8→  Volume2,
+     9→     9→     9→  VolumeX,
+    10→    10→    10→  Maximize,
+    11→    11→    11→  Minimize,
+    12→    12→    12→  X,
+    13→    13→    13→  Clock,
+    14→    14→    14→  Film,
+    15→    15→    15→  Sparkles,
+    16→    16→    16→  SkipForward,
+    17→    17→    17→  SkipBack,
+    18→    18→    18→  Settings,
+    19→    19→    19→  ChevronRight,
+    20→    20→    20→  Search,
+    21→    21→    21→  Grid3X3,
+    22→    22→    22→  LayoutList,
+    23→    23→    23→  ArrowUp,
+    24→    24→    24→  Heart,
+    25→    25→    25→  Eye,
+    26→    26→    26→  Star,
+    27→    27→    27→} from 'lucide-react'
+    28→    28→    28→import { Badge } from '@/components/ui/badge'
+    29→    29→    29→import { Button } from '@/components/ui/button'
+    30→    30→    30→import { Slider } from '@/components/ui/slider'
+    31→    31→    31→
+    32→    32→    32→// ─── Types ────────────────────────────────────────────────────────────
+    33→    33→    33→interface VideoData {
+    34→    34→    34→  id: string
+    35→    35→    35→  title: string
+    36→    36→    36→  series: string
+    37→    37→    37→  duration: string
+    38→    38→    38→  durationSeconds: number
+    39→    39→    39→  url: string
+    40→    40→    40→  description: string
+    41→    41→    41→  quality: string
+    42→    42→    42→  date: string
+    43→    43→    43→  views?: number
+    44→    44→    44→}
+    45→    45→    45→
+    46→    46→    46→// ─── Video Data ───────────────────────────────────────────────────────
+    47→    47→    47→const CDN_BASE = 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos'
+    48→    48→    48→
+    49→    49→    49→const videos: VideoData[] = [
+    50→    50→    50→  {
+    51→    51→    51→    id: 'eula-hilichurl-trouble',
+    52→    52→    52→    title: 'Eula - Hilichurl Trouble',
+    53→    53→    53→    series: 'Genshin Impact',
+    54→    54→    54→    duration: '4:54',
+    55→    55→    55→    durationSeconds: 294,
+    56→    56→    56→    url: `${CDN_BASE}/Eula_Hilichurl_Trouble.mp4`,
+    57→    57→    57→    description: 'Eula encounters hilichurls in the wild. Things start in her favor but quickly take a turn for the worse.',
+    58→    58→    58→    quality: '1080p',
+    59→    59→    59→    date: '2022-03',
+    60→    60→    60→  },
+    61→    61→    61→  {
+    62→    62→    62→    id: 'ganyu-forest-trouble',
+    63→    63→    63→    title: 'Ganyu - Forest Trouble',
+    64→    64→    64→    series: 'Genshin Impact',
+    65→    65→    65→    duration: '2:43',
+    66→    66→    66→    durationSeconds: 163,
+    67→    67→    67→    url: `${CDN_BASE}/Ganyu_Forest_Trouble.mp4`,
+    68→    68→    68→    description: 'Ganyu ventures into the forest and encounters unexpected trouble. A classic 3DimmAnimations Genshin piece.',
+    69→    69→    69→    quality: '1080p',
+    70→    70→    70→    date: '2022-02',
+    71→    71→    71→  },
+    72→    72→    72→  {
+    73→    73→    73→    id: 'hu-tao-riding',
+    74→    74→    74→    title: 'Hu Tao - Riding',
+    75→    75→    75→    series: 'Genshin Impact',
+    76→    76→    76→    duration: '1:56',
+    77→    77→    77→    durationSeconds: 116,
+    78→    78→    78→    url: `${CDN_BASE}/Hu_Tao_Riding.mp4`,
+    79→    79→    79→    description: 'Hu Tao riding animation. One of the most iconic 3DimmAnimations Genshin works.',
+    80→    80→    80→    quality: '1080p',
+    81→    81→    81→    date: '2022-01',
+    82→    82→    82→  },
+    83→    83→    83→  {
+    84→    84→    84→    id: 'hu-tao-dimm',
+    85→    85→    85→    title: 'Hu Tao - Dimm Special',
+    86→    86→    86→    series: 'Genshin Impact',
+    87→    87→    87→    duration: '2:00',
+    88→    88→    88→    durationSeconds: 120,
+    89→    89→    89→    url: `${CDN_BASE}/Hu_Tao_Dimm.mp4`,
+    90→    90→    90→    description: 'Hu Tao in a special Dimm animation. Enhanced quality version by 3DimmAnimations.',
+    91→    91→    91→    quality: '1080p',
+    92→    92→    92→    date: '2022-01',
+    93→    93→    93→  },
+    94→    94→    94→  {
+    95→    95→    95→    id: 'yae-gorou-shenanigans',
+    96→    96→    96→    title: 'Yae & Gorou - Shenanigans',
+    97→    97→    97→    series: 'Genshin Impact',
+    98→    98→    98→    duration: '6:00',
+    99→    99→    99→    durationSeconds: 360,
+   100→   100→   100→    url: `${CDN_BASE}/Yae_Gorou_Shenanigans.mp4`,
+   101→   101→   101→    description: 'Yae Miko and Gorou in their signature shenanigans. A longer animation with detailed storytelling.',
+   102→   102→   102→    quality: '1080p',
+   103→   103→   103→    date: '2022-02',
+   104→   104→   104→  },
+   105→   105→   105→  {
+   106→   106→   106→    id: 'bunny-bar-1-klee',
+   107→   107→   107→    title: 'Bunny Bar Pt. 1 - Klee',
+   108→   108→   108→    series: 'Genshin Impact',
+   109→   109→   109→    duration: '2:50',
+   110→   110→   110→    durationSeconds: 170,
+   111→   111→   111→    url: `${CDN_BASE}/Bunny_Bar_1_Klee.mp4`,
+   112→   112→   112→    description: 'Bunny Bar Special Part 1 featuring Klee. The iconic Bunny Bar series by 3DimmAnimations.',
+   113→   113→   113→    quality: '1080p',
+   114→   114→   114→    date: '2021-12',
+   115→   115→   115→  },
+   116→   116→   116→  {
+   117→   117→   117→    id: 'bunny-bar-2-diona',
+   118→   118→   118→    title: 'Bunny Bar Pt. 2 - Diona',
+   119→   119→   119→    series: 'Genshin Impact',
+   120→   120→   120→    duration: '3:45',
+   121→   121→   121→    durationSeconds: 225,
+   122→   122→   122→    url: `${CDN_BASE}/Bunny_Bar_2_Diona.mp4`,
+   123→   123→   123→    description: 'Bunny Bar Special Part 2 featuring Diona. The second installment of the beloved Bunny Bar series.',
+   124→   124→   124→    quality: '1080p',
+   125→   125→   125→    date: '2021-12',
+   126→   126→   126→  },
+   127→   127→   127→  {
+   128→   128→   128→    id: 'bunny-bar-3-qiqi',
+   129→   129→   129→    title: 'Bunny Bar Pt. 3 - Qiqi',
+   130→   130→   130→    series: 'Genshin Impact',
+   131→   131→   131→    duration: '4:23',
+   132→   132→   132→    durationSeconds: 263,
+   133→   133→   133→    url: `${CDN_BASE}/Bunny_Bar_3_Qiqi.mp4`,
+   134→   134→   134→    description: 'Bunny Bar Special Part 3 featuring Qiqi. The grand finale of the Bunny Bar trilogy.',
+   135→   135→   135→    quality: '720p',
+   136→   136→   136→    date: '2021-12',
+   137→   137→   137→  },
+   138→   138→   138→  {
+   139→   139→   139→    id: 'kokkoro-salad',
+   140→   140→   140→    title: "Kokkoro's Salad",
+   141→   141→   141→    series: 'Princess Connect',
+   142→   142→   142→    duration: '6:40',
+   143→   143→   143→    durationSeconds: 400,
+   144→   144→   144→    url: `${CDN_BASE}/Kokkoro_Salad.mp4`,
+   145→   145→   145→    description: "Kokkoro and Yuuki's morning routine animation. The longest 3DimmAnimations video featuring Princess Connect characters.",
+   146→   146→   146→    quality: '1080p',
+   147→   147→   147→    date: '2022-04',
+   148→   148→   148→  },
+   149→   149→   149→  {
+   150→   150→   150→    id: 'takagi-chi-2k',
+   151→   151→   151→    title: 'Takagi & Chii - 2K',
+   152→   152→   152→    series: 'Takagi-san',
+   153→   153→   153→    duration: '5:45',
+   154→   154→   154→    durationSeconds: 345,
+   155→   155→   155→    url: `${CDN_BASE}/Takagi_Chi_2K.mp4`,
+   156→   156→   156→    description: 'Takagi-san and Chii in a heartwarming family bonding animation. High resolution 2K version.',
+   157→   157→   157→    quality: '2K',
+   158→   158→   158→    date: '2022-05',
+   159→   159→   159→  },
+   160→   160→   160→  {
+   161→   161→   161→    id: 'aharen-4k',
+   162→   162→   162→    title: 'Aharen-san - 4K',
+   163→   163→   163→    series: 'Aharen-san',
+   164→   164→   164→    duration: '6:30',
+   165→   165→   165→    durationSeconds: 390,
+   166→   166→   166→    url: `${CDN_BASE}/Aharen_4K.mp4`,
+   167→   167→   167→    description: 'Aharen-san and Raidou after class. Ultra high definition 4K animation by 3DimmAnimations.',
+   168→   168→   168→    quality: '4K',
+   169→   169→   169→    date: '2022-06',
+   170→   170→   170→  },
+   171→   171→   171→  {
+   172→   172→   172→    id: 'hook-missionary',
+   173→   173→   173→    title: 'Hook - Missionary',
+   174→   174→   174→    series: 'Honkai Star Rail',
+   175→   175→   175→    duration: '3:40',
+   176→   176→   176→    durationSeconds: 220,
+   177→   177→   177→    url: `${CDN_BASE}/Hook_Missionary.mp4`,
+   178→   178→   178→    description: 'Hook from Honkai Star Rail. One of the first HSR animations by 3DimmAnimations.',
+   179→   179→   179→    quality: '1080p',
+   180→   180→   180→    date: '2023-05',
+   181→   181→   181→  },
+   182→   182→   182→]
+   183→   183→   183→
+   184→   184→   184→// ─── Series Config ────────────────────────────────────────────────────
+   185→   185→   185→const seriesConfig: Record<string, {
+   186→   186→   186→  color: string
+   187→   187→   187→  accent: string
+   188→   188→   188→  bg: string
+   189→   189→   189→  border: string
+   190→   190→   190→  glow: string
+   191→   191→   191→  gradient: string
+   192→   192→   192→  icon: string
+   193→   193→   193→}> = {
+   194→   194→   194→  'Genshin Impact': {
+   195→   195→   195→    color: 'text-amber-300',
+   196→   196→   196→    accent: '#D4A04A',
+   197→   197→   197→    bg: 'bg-amber-500/10',
+   198→   198→   198→    border: 'border-amber-500/20',
+   199→   199→   199→    glow: 'shadow-amber-500/15',
+   200→   200→   200→    gradient: 'from-amber-600/80 to-orange-600/80',
+   201→   201→   201→    icon: '⚡',
+   202→   202→   202→  },
+   203→   203→   203→  'Honkai Star Rail': {
+   204→   204→   204→    color: 'text-sky-300',
+   205→   205→   205→    accent: '#5B9BD5',
+   206→   206→   206→    bg: 'bg-sky-500/10',
+   207→   207→   207→    border: 'border-sky-500/20',
+   208→   208→   208→    glow: 'shadow-sky-500/15',
+   209→   209→   209→    gradient: 'from-sky-600/80 to-blue-600/80',
+   210→   210→   210→    icon: '🌟',
+   211→   211→   211→  },
+   212→   212→   212→  'Takagi-san': {
+   213→   213→   213→    color: 'text-rose-300',
+   214→   214→   214→    accent: '#E57373',
+   215→   215→   215→    bg: 'bg-rose-500/10',
+   216→   216→   216→    border: 'border-rose-500/20',
+   217→   217→   217→    glow: 'shadow-rose-500/15',
+   218→   218→   218→    gradient: 'from-rose-600/80 to-pink-600/80',
+   219→   219→   219→    icon: '💕',
+   220→   220→   220→  },
+   221→   221→   221→  'Aharen-san': {
+   222→   222→   222→    color: 'text-emerald-300',
+   223→   223→   223→    accent: '#4DB6AC',
+   224→   224→   224→    bg: 'bg-emerald-500/10',
+   225→   225→   225→    border: 'border-emerald-500/20',
+   226→   226→   226→    glow: 'shadow-emerald-500/15',
+   227→   227→   227→    gradient: 'from-emerald-600/80 to-teal-600/80',
+   228→   228→   228→    icon: '🍃',
+   229→   229→   229→  },
+   230→   230→   230→  'Princess Connect': {
+   231→   231→   231→    color: 'text-violet-300',
+   232→   232→   232→    accent: '#AB84E6',
+   233→   233→   233→    bg: 'bg-violet-500/10',
+   234→   234→   234→    border: 'border-violet-500/20',
+   235→   235→   235→    glow: 'shadow-violet-500/15',
+   236→   236→   236→    gradient: 'from-violet-600/80 to-purple-600/80',
+   237→   237→   237→    icon: '👑',
+   238→   238→   238→  },
+   239→   239→   239→}
+   240→   240→   240→
+   241→   241→   241→const allSeries = ['All', ...Object.keys(seriesConfig)]
+   242→   242→   242→
+   243→   243→   243→// ─── Thumbnail Component ──────────────────────────────────────────────
+   244→   244→   244→function VideoThumbnail({ video, className = '' }: { video: VideoData; className?: string }) {
+   245→   245→   245→  const config = seriesConfig[video.series]
+   246→   246→   246→  const initial = video.title.charAt(0).toUpperCase()
+   247→   247→   247→
+   248→   248→   248→  return (
+   249→   249→   249→    <div className={`relative overflow-hidden ${className}`}>
+   250→   250→   250→      {/* Base gradient */}
+   251→   251→   251→      <div className={`absolute inset-0 bg-gradient-to-br ${config.gradient}`} />
+   252→   252→   252→      {/* Depth layers */}
+   253→   253→   253→      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+   254→   254→   254→      <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent" />
+   255→   255→   255→      {/* Geometric pattern */}
+   256→   256→   256→      <div className="absolute inset-0 opacity-[0.03]" style={{
+   257→   257→   257→        backgroundImage: `linear-gradient(30deg, rgba(212,160,74,0.5) 12%, transparent 12.5%, transparent 87%, rgba(212,160,74,0.5) 87.5%, rgba(212,160,74,0.5)),
+   258→   258→   258→          linear-gradient(150deg, rgba(212,160,74,0.5) 12%, transparent 12.5%, transparent 87%, rgba(212,160,74,0.5) 87.5%, rgba(212,160,74,0.5)),
+   259→   259→   259→          linear-gradient(30deg, rgba(212,160,74,0.5) 12%, transparent 12.5%, transparent 87%, rgba(212,160,74,0.5) 87.5%, rgba(212,160,74,0.5)),
+   260→   260→   260→          linear-gradient(150deg, rgba(212,160,74,0.5) 12%, transparent 12.5%, transparent 87%, rgba(212,160,74,0.5) 87.5%, rgba(212,160,74,0.5))`,
+   261→   261→   261→        backgroundSize: '80px 140px',
+   262→   262→   262→        backgroundPosition: '0 0, 0 0, 40px 70px, 40px 70px',
+   263→   263→   263→      }} />
+   264→   264→   264→      {/* Large initial */}
+   265→   265→   265→      <div className="absolute inset-0 flex items-center justify-center">
+   266→   266→   266→        <span className="text-white/[0.07] font-bold select-none tracking-tighter" style={{ fontSize: '10rem', lineHeight: 0.8 }}>
+   267→   267→   267→          {initial}
+   268→   268→   268→        </span>
+   269→   269→   269→      </div>
+   270→   270→   270→      {/* Play icon */}
+   271→   271→   271→      <div className="absolute inset-0 flex items-center justify-center">
+   272→   272→   272→        <div className="w-14 h-14 rounded-full bg-white/[0.08] backdrop-blur-sm flex items-center justify-center border border-white/[0.12] transition-all duration-500 group-hover:scale-110 group-hover:bg-white/[0.12] group-hover:border-[oklch(84%_0.19_80.46/0.3)]">
+   273→   273→   273→          <Play className="w-6 h-6 text-white/70 ml-0.5" />
+   274→   274→   274→        </div>
+   275→   275→   275→      </div>
+   276→   276→   276→      {/* Duration */}
+   277→   277→   277→      <div className="absolute bottom-2.5 right-2.5 bg-black/60 backdrop-blur-md text-white/90 text-[10px] px-2 py-0.5 rounded font-mono tracking-wider flex items-center gap-1 border border-white/[0.06]">
+   278→   278→   278→        <Clock className="w-2.5 h-2.5" />
+   279→   279→   279→        {video.duration}
+   280→   280→   280→      </div>
+   281→   281→   281→      {/* Quality badge */}
+   282→   282→   282→      <div className="absolute top-2.5 right-2.5">
+   283→   283→   283→        <span className="text-[10px] px-1.5 py-0.5 rounded font-mono tracking-wider bg-[oklch(84%_0.19_80.46/0.15)] text-[oklch(84%_0.15_80.46)] border border-[oklch(84%_0.19_80.46/0.2)]">
+   284→   284→   284→          {video.quality}
+   285→   285→   285→        </span>
+   286→   286→   286→      </div>
+   287→   287→   287→      {/* Series badge */}
+   288→   288→   288→      <div className="absolute top-2.5 left-2.5">
+   289→   289→   289→        <span className={`text-[10px] px-2 py-0.5 rounded-md font-medium ${config.bg} ${config.color} border ${config.border} backdrop-blur-sm tracking-wide`}>
+   290→   290→   290→          {video.series}
+   291→   291→   291→        </span>
+   292→   292→   292→      </div>
+   293→   293→   293→    </div>
+   294→   294→   294→  )
+   295→   295→   295→}
+   296→   296→   296→
+   297→   297→   297→// ─── Video Player ──────────────────────────────────────────────────────
+   298→   298→   298→function VideoPlayer({ video, onClose }: { video: VideoData; onClose: () => void }) {
+   299→   299→   299→  const videoRef = useRef<HTMLVideoElement>(null)
+   300→   300→   300→  const containerRef = useRef<HTMLDivElement>(null)
+   301→   301→   301→  const progressRef = useRef<HTMLDivElement>(null)
+   302→   302→   302→  const controlsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+   303→   303→   303→
+   304→   304→   304→  const [isPlaying, setIsPlaying] = useState(false)
+   305→   305→   305→  const [isMuted, setIsMuted] = useState(false)
+   306→   306→   306→  const [volume, setVolume] = useState(0.8)
+   307→   307→   307→  const [currentTime, setCurrentTime] = useState(0)
+   308→   308→   308→  const [duration, setDuration] = useState(0)
+   309→   309→   309→  const [playbackRate, setPlaybackRate] = useState(1)
+   310→   310→   310→  const [isFullscreen, setIsFullscreen] = useState(false)
+   311→   311→   311→  const [showControls, setShowControls] = useState(true)
+   312→   312→   312→  const [showSpeedMenu, setShowSpeedMenu] = useState(false)
+   313→   313→   313→  const [isBuffering, setIsBuffering] = useState(false)
+   314→   314→   314→
+   315→   315→   315→  const formatTime = (seconds: number) => {
+   316→   316→   316→    const mins = Math.floor(seconds / 60)
+   317→   317→   317→    const secs = Math.floor(seconds % 60)
+   318→   318→   318→    return `${mins}:${secs.toString().padStart(2, '0')}`
+   319→   319→   319→  }
+   320→   320→   320→
+   321→   321→   321→  const handlePlayPause = useCallback(() => {
+   322→   322→   322→    const v = videoRef.current
+   323→   323→   323→    if (!v) return
+   324→   324→   324→    if (v.paused) { v.play().catch(() => {}) } else { v.pause() }
+   325→   325→   325→  }, [])
+   326→   326→   326→
+   327→   327→   327→  const handleSeek = useCallback((value: number[]) => {
+   328→   328→   328→    const v = videoRef.current
+   329→   329→   329→    if (!v) return
+   330→   330→   330→    v.currentTime = value[0]
+   331→   331→   331→    setCurrentTime(value[0])
+   332→   332→   332→  }, [])
+   333→   333→   333→
+   334→   334→   334→  const handleVolumeChange = useCallback((value: number[]) => {
+   335→   335→   335→    const v = videoRef.current
+   336→   336→   336→    if (!v) return
+   337→   337→   337→    const vol = value[0]
+   338→   338→   338→    v.volume = vol
+   339→   339→   339→    setVolume(vol)
+   340→   340→   340→    setIsMuted(vol === 0)
+   341→   341→   341→  }, [])
+   342→   342→   342→
+   343→   343→   343→  const toggleMute = useCallback(() => {
+   344→   344→   344→    const v = videoRef.current
+   345→   345→   345→    if (!v) return
+   346→   346→   346→    v.muted = !v.muted
+   347→   347→   347→    setIsMuted(v.muted)
+   348→   348→   348→  }, [])
+   349→   349→   349→
+   350→   350→   350→  const toggleFullscreen = useCallback(() => {
+   351→   351→   351→    const container = containerRef.current
+   352→   352→   352→    if (!container) return
+   353→   353→   353→    if (!document.fullscreenElement) {
+   354→   354→   354→      container.requestFullscreen().catch(() => {})
+   355→   355→   355→    } else {
+   356→   356→   356→      document.exitFullscreen().catch(() => {})
+   357→   357→   357→    }
+   358→   358→   358→  }, [])
+   359→   359→   359→
+   360→   360→   360→  const changeSpeed = useCallback((speed: number) => {
+   361→   361→   361→    const v = videoRef.current
+   362→   362→   362→    if (!v) return
+   363→   363→   363→    v.playbackRate = speed
+   364→   364→   364→    setPlaybackRate(speed)
+   365→   365→   365→    setShowSpeedMenu(false)
+   366→   366→   366→  }, [])
+   367→   367→   367→
+   368→   368→   368→  const skip = useCallback((seconds: number) => {
+   369→   369→   369→    const v = videoRef.current
+   370→   370→   370→    if (!v) return
+   371→   371→   371→    v.currentTime = Math.min(Math.max(v.currentTime + seconds, 0), v.duration)
+   372→   372→   372→  }, [])
+   373→   373→   373→
+   374→   374→   374→  const handleProgressClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+   375→   375→   375→    const v = videoRef.current
+   376→   376→   376→    const bar = progressRef.current
+   377→   377→   377→    if (!v || !bar) return
+   378→   378→   378→    const rect = bar.getBoundingClientRect()
+   379→   379→   379→    const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width))
+   380→   380→   380→    v.currentTime = ratio * v.duration
+   381→   381→   381→  }, [])
+   382→   382→   382→
+   383→   383→   383→  const scheduleHideControls = useCallback(() => {
+   384→   384→   384→    if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current)
+   385→   385→   385→    controlsTimeoutRef.current = setTimeout(() => setShowControls(false), 3000)
+   386→   386→   386→  }, [])
+   387→   387→   387→
+   388→   388→   388→  const showControlsTemporarily = useCallback(() => {
+   389→   389→   389→    setShowControls(true)
+   390→   390→   390→    if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current)
+   391→   391→   391→    if (isPlaying) scheduleHideControls()
+   392→   392→   392→  }, [isPlaying, scheduleHideControls])
+   393→   393→   393→
+   394→   394→   394→  useEffect(() => {
+   395→   395→   395→    const handleKeyDown = (e: KeyboardEvent) => {
+   396→   396→   396→      switch (e.key) {
+   397→   397→   397→        case 'Escape': onClose(); break
+   398→   398→   398→        case ' ': e.preventDefault(); handlePlayPause(); break
+   399→   399→   399→        case 'ArrowLeft': skip(-10); break
+   400→   400→   400→        case 'ArrowRight': skip(10); break
+   401→   401→   401→        case 'f': toggleFullscreen(); break
+   402→   402→   402→        case 'm': toggleMute(); break
+   403→   403→   403→      }
+   404→   404→   404→    }
+   405→   405→   405→    window.addEventListener('keydown', handleKeyDown)
+   406→   406→   406→    return () => window.removeEventListener('keydown', handleKeyDown)
+   407→   407→   407→  }, [onClose, handlePlayPause, skip, toggleFullscreen, toggleMute])
+   408→   408→   408→
+   409→   409→   409→  useEffect(() => {
+   410→   410→   410→    const v = videoRef.current
+   411→   411→   411→    if (!v) return
+   412→   412→   412→    const onPlay = () => { setIsPlaying(true); scheduleHideControls() }
+   413→   413→   413→    const onPause = () => { setIsPlaying(false); setShowControls(true); if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current) }
+   414→   414→   414→    const onTimeUpdate = () => setCurrentTime(v.currentTime)
+   415→   415→   415→    const onLoadedMetadata = () => setDuration(v.duration)
+   416→   416→   416→    const onWaiting = () => setIsBuffering(true)
+   417→   417→   417→    const onPlaying = () => setIsBuffering(false)
+   418→   418→   418→    v.addEventListener('play', onPlay); v.addEventListener('pause', onPause)
+   419→   419→   419→    v.addEventListener('timeupdate', onTimeUpdate); v.addEventListener('loadedmetadata', onLoadedMetadata)
+   420→   420→   420→    v.addEventListener('waiting', onWaiting); v.addEventListener('playing', onPlaying)
+   421→   421→   421→    return () => {
+   422→   422→   422→      v.removeEventListener('play', onPlay); v.removeEventListener('pause', onPause)
+   423→   423→   423→      v.removeEventListener('timeupdate', onTimeUpdate); v.removeEventListener('loadedmetadata', onLoadedMetadata)
+   424→   424→   424→      v.removeEventListener('waiting', onWaiting); v.removeEventListener('playing', onPlaying)
+   425→   425→   425→    }
+   426→   426→   426→  }, [scheduleHideControls])
+   427→   427→   427→
+   428→   428→   428→  useEffect(() => {
+   429→   429→   429→    const handler = () => setIsFullscreen(!!document.fullscreenElement)
+   430→   430→   430→    document.addEventListener('fullscreenchange', handler)
+   431→   431→   431→    return () => document.removeEventListener('fullscreenchange', handler)
+   432→   432→   432→  }, [])
+   433→   433→   433→
+   434→   434→   434→  const progress = duration > 0 ? (currentTime / duration) * 100 : 0
+   435→   435→   435→
+   436→   436→   436→  return (
+   437→   437→   437→    <motion.div
+   438→   438→   438→      initial={{ opacity: 0 }}
+   439→   439→   439→      animate={{ opacity: 1 }}
+   440→   440→   440→      exit={{ opacity: 0 }}
+   441→   441→   441→      className="fixed inset-0 z-50 bg-black/98 backdrop-blur-sm flex items-center justify-center"
+   442→   442→   442→      onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
+   443→   443→   443→    >
+   444→   444→   444→      <div ref={containerRef} className="relative w-full h-full flex items-center justify-center" onMouseMove={showControlsTemporarily}>
+   445→   445→   445→        <video ref={videoRef} src={video.url} className="w-full h-full object-contain" onClick={handlePlayPause} playsInline volume={volume} />
+   446→   446→   446→
+   447→   447→   447→        {isBuffering && (
+   448→   448→   448→          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+   449→   449→   449→            <div className="w-14 h-14 border-2 border-[oklch(84%_0.19_80.46/0.2)] border-t-[oklch(84%_0.19_80.46)] rounded-full animate-spin" />
+   450→   450→   450→          </div>
+   451→   451→   451→        )}
+   452→   452→   452→
+   453→   453→   453→        <AnimatePresence>
+   454→   454→   454→          {!isPlaying && !isBuffering && (
+   455→   455→   455→            <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 1.2 }}
+   456→   456→   456→              className="absolute inset-0 flex items-center justify-center pointer-events-none">
+   457→   457→   457→              <div className="w-20 h-20 rounded-full bg-[oklch(84%_0.19_80.46/0.15)] backdrop-blur-md flex items-center justify-center border border-[oklch(84%_0.19_80.46/0.2)]">
+   458→   458→   458→                <Play className="w-10 h-10 text-white/80 ml-1" />
+   459→   459→   459→              </div>
+   460→   460→   460→            </motion.div>
+   461→   461→   461→          )}
+   462→   462→   462→        </AnimatePresence>
+   463→   463→   463→
+   464→   464→   464→        <AnimatePresence>
+   465→   465→   465→          {showControls && (
+   466→   466→   466→            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}
+   467→   467→   467→              className="absolute inset-0 flex flex-col justify-between pointer-events-none">
+   468→   468→   468→              {/* Top bar */}
+   469→   469→   469→              <div className="bg-gradient-to-b from-black/80 via-black/40 to-transparent p-4 md:p-6 pointer-events-auto">
+   470→   470→   470→                <div className="flex items-center gap-3">
+   471→   471→   471→                  <Button variant="ghost" size="icon" onClick={onClose} className="text-white/80 hover:text-white hover:bg-white/10 rounded-full">
+   472→   472→   472→                    <X className="w-5 h-5" />
+   473→   473→   473→                  </Button>
+   474→   474→   474→                  <div>
+   475→   475→   475→                    <h2 className="text-white font-medium text-base tracking-wide">{video.title}</h2>
+   476→   476→   476→                    <p className="text-white/40 text-xs font-mono tracking-wider uppercase mt-0.5">{video.series} · 3DimmAnimations · {video.quality}</p>
+   477→   477→   477→                  </div>
+   478→   478→   478→                </div>
+   479→   479→   479→              </div>
+   480→   480→   480→
+   481→   481→   481→              {/* Bottom controls */}
+   482→   482→   482→              <div className="bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 md:p-6 pointer-events-auto">
+   483→   483→   483→                {/* Progress bar */}
+   484→   484→   484→                <div ref={progressRef} className="relative w-full h-1 bg-white/10 rounded-full cursor-pointer group mb-4 hover:h-1.5 transition-all"
+   485→   485→   485→                  onClick={handleProgressClick}>
+   486→   486→   486→                  <div className="absolute left-0 top-0 h-full bg-gradient-to-r from-[oklch(84%_0.19_80.46)] to-[oklch(75%_0.15_60)] rounded-full transition-all"
+   487→   487→   487→                    style={{ width: `${progress}%` }} />
+   488→   488→   488→                  <div className="absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-[oklch(84%_0.19_80.46)] rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+   489→   489→   489→                    style={{ left: `calc(${progress}% - 6px)` }} />
+   490→   490→   490→                </div>
+   491→   491→   491→
+   492→   492→   492→                <div className="flex items-center justify-between">
+   493→   493→   493→                  <div className="flex items-center gap-1.5">
+   494→   494→   494→                    <Button variant="ghost" size="icon" onClick={() => skip(-10)} className="text-white/70 hover:text-white hover:bg-white/10 rounded-full h-9 w-9">
+   495→   495→   495→                      <SkipBack className="w-4 h-4" />
+   496→   496→   496→                    </Button>
+   497→   497→   497→                    <Button variant="ghost" size="icon" onClick={handlePlayPause} className="text-white hover:bg-white/10 rounded-full h-10 w-10">
+   498→   498→   498→                      {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6 ml-0.5" />}
+   499→   499→   499→                    </Button>
+   500→   500→   500→                    <Button variant="ghost" size="icon" onClick={() => skip(10)} className="text-white/70 hover:text-white hover:bg-white/10 rounded-full h-9 w-9">
+
+[showing lines 1-500 of 875; use offset=501 with limit to continue reading]

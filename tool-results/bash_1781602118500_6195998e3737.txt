@@ -1,0 +1,811 @@
+webtorrent PID: 12507
+
+fetching torrent metadata from 0 peers
+verifying existing torrent data...
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 237 B/s Downloaded: 0 B/22 GB Uploaded: 167 B
+Running time: 1 seconds  Time remaining: 3 years  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            0 B        0 B/s        0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 2.5 KB/s Downloaded: 0 B/22 GB Uploaded: 201 B
+Running time: 2 seconds  Time remaining: 3 months  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            0 B        0 B/s        0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 25 KB/s Downloaded: 66 KB/22 GB Uploaded: 286 B
+Running time: 3 seconds  Time remaining: 10 days  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            66 KB      26 KB/s      0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 50 KB/s Downloaded: 197 KB/22 GB Uploaded: 439 B
+Running time: 4 seconds  Time remaining: 5 days  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            197 KB     56 KB/s      0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 93 KB/s Downloaded: 459 KB/22 GB Uploaded: 796 B
+Running time: 5 seconds  Time remaining: 3 days  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            459 KB     102 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 154 KB/s Downloaded: 754 KB/22 GB Uploaded: 1.2 KB
+Running time: 6 seconds  Time remaining: 2 days  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            754 KB     151 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 217 KB/s Downloaded: 1.1 MB/22 GB Uploaded: 1.5 KB
+Running time: 7 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            1.1 MB     216 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 261 KB/s Downloaded: 1.4 MB/22 GB Uploaded: 1.8 KB
+Running time: 8 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            1.4 MB     262 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 292 KB/s Downloaded: 1.7 MB/22 GB Uploaded: 2.3 KB
+Running time: 9 seconds  Time remaining: 21 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            1.7 MB     292 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 324 KB/s Downloaded: 2.1 MB/22 GB Uploaded: 2.6 KB
+Running time: 10 seconds  Time remaining: 19 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            2.1 MB     324 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 317 KB/s Downloaded: 2.4 MB/22 GB Uploaded: 3.0 KB
+Running time: 11 seconds  Time remaining: 19 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            2.4 MB     315 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 279 KB/s Downloaded: 2.5 MB/22 GB Uploaded: 3.2 KB
+Running time: 12 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            2.5 MB     282 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 220 KB/s Downloaded: 2.6 MB/22 GB Uploaded: 3.2 KB
+Running time: 13 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            2.6 MB     220 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 196 KB/s Downloaded: 2.8 MB/22 GB Uploaded: 3.3 KB
+Running time: 14 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            2.8 MB     197 KB/s     0 B/s       
+                                                            
+After 15s: 2.2M
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 176 KB/s Downloaded: 3.1 MB/22 GB Uploaded: 3.5 KB
+Running time: 15 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            3.1 MB     177 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 200 KB/s Downloaded: 3.4 MB/22 GB Uploaded: 4.0 KB
+Running time: 16 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            3.4 MB     200 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 226 KB/s Downloaded: 3.7 MB/22 GB Uploaded: 4.2 KB
+Running time: 17 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            3.7 MB     223 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 267 KB/s Downloaded: 3.9 MB/22 GB Uploaded: 4.5 KB
+Running time: 18 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            3.9 MB     265 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 277 KB/s Downloaded: 4.2 MB/22 GB Uploaded: 4.8 KB
+Running time: 19 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            4.2 MB     275 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 268 KB/s Downloaded: 4.5 MB/22 GB Uploaded: 5.0 KB
+Running time: 20 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            4.5 MB     269 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 266 KB/s Downloaded: 4.8 MB/22 GB Uploaded: 5.5 KB
+Running time: 21 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            4.8 MB     265 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 274 KB/s Downloaded: 5.1 MB/22 GB Uploaded: 5.6 KB
+Running time: 22 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            5.1 MB     275 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 248 KB/s Downloaded: 5.2 MB/22 GB Uploaded: 5.8 KB
+Running time: 23 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            5.2 MB     246 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 233 KB/s Downloaded: 5.4 MB/22 GB Uploaded: 6.1 KB
+Running time: 24 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            5.4 MB     233 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 233 KB/s Downloaded: 5.7 MB/22 GB Uploaded: 6.4 KB
+Running time: 25 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            5.7 MB     233 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 203 KB/s Downloaded: 5.9 MB/22 GB Uploaded: 6.5 KB
+Running time: 26 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            5.9 MB     200 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 207 KB/s Downloaded: 6.1 MB/22 GB Uploaded: 6.7 KB
+Running time: 27 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            6.1 MB     210 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 226 KB/s Downloaded: 6.4 MB/22 GB Uploaded: 7.1 KB
+Running time: 28 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            6.4 MB     226 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 260 KB/s Downloaded: 6.8 MB/22 GB Uploaded: 7.6 KB
+Running time: 29 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            6.8 MB     259 KB/s     0 B/s       
+                                                            
+After 30s: 6.2M
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 303 KB/s Downloaded: 7.2 MB/22 GB Uploaded: 8.0 KB
+Running time: 30 seconds  Time remaining: 20 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            7.2 MB     305 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 345 KB/s Downloaded: 7.6 MB/22 GB Uploaded: 8.4 KB
+Running time: 31 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            7.6 MB     344 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 408 KB/s Downloaded: 8.2 MB/22 GB Uploaded: 9.1 KB
+Running time: 32 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            8.2 MB     406 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 455 KB/s Downloaded: 8.7 MB/22 GB Uploaded: 9.8 KB
+Running time: 33 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            8.7 MB     455 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 445 KB/s Downloaded: 9.1 MB/22 GB Uploaded: 10 KB
+Running time: 34 seconds  Time remaining: 14 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            9.1 MB     446 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 418 KB/s Downloaded: 9.3 MB/22 GB Uploaded: 10 KB
+Running time: 35 seconds  Time remaining: 14 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            9.3 MB     416 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 364 KB/s Downloaded: 9.6 MB/22 GB Uploaded: 11 KB
+Running time: 36 seconds  Time remaining: 17 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            9.6 MB     364 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 247 KB/s Downloaded: 9.6 MB/22 GB Uploaded: 11 KB
+Running time: 37 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            9.6 MB     246 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 210 KB/s Downloaded: 9.9 MB/22 GB Uploaded: 11 KB
+Running time: 38 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            9.9 MB     213 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 242 KB/s Downloaded: 10 MB/22 GB Uploaded: 11 KB
+Running time: 39 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            10 MB      242 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 206 KB/s Downloaded: 10 MB/22 GB Uploaded: 11 KB
+Running time: 40 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            10 MB      203 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 250 KB/s Downloaded: 11 MB/22 GB Uploaded: 12 KB
+Running time: 41 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            11 MB      249 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 363 KB/s Downloaded: 11 MB/22 GB Uploaded: 12 KB
+Running time: 42 seconds  Time remaining: 17 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            11 MB      364 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 352 KB/s Downloaded: 12 MB/22 GB Uploaded: 13 KB
+Running time: 43 seconds  Time remaining: 17 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            12 MB      354 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 315 KB/s Downloaded: 12 MB/22 GB Uploaded: 13 KB
+Running time: 44 seconds  Time remaining: 19 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            12 MB      315 KB/s     0 B/s       
+                                                            
+After 45s: 11M
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 391 KB/s Downloaded: 12 MB/22 GB Uploaded: 13 KB
+Running time: 45 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            12 MB      393 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 373 KB/s Downloaded: 13 MB/22 GB Uploaded: 14 KB
+Running time: 46 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            13 MB      374 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 364 KB/s Downloaded: 13 MB/22 GB Uploaded: 14 KB
+Running time: 47 seconds  Time remaining: 17 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            13 MB      364 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 376 KB/s Downloaded: 14 MB/22 GB Uploaded: 15 KB
+Running time: 48 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            14 MB      377 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 368 KB/s Downloaded: 14 MB/22 GB Uploaded: 15 KB
+Running time: 49 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            14 MB      367 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 337 KB/s Downloaded: 14 MB/22 GB Uploaded: 15 KB
+Running time: 50 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            14 MB      338 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 292 KB/s Downloaded: 14 MB/22 GB Uploaded: 15 KB
+Running time: 51 seconds  Time remaining: 21 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            14 MB      292 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 275 KB/s Downloaded: 15 MB/22 GB Uploaded: 16 KB
+Running time: 52 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            15 MB      275 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 257 KB/s Downloaded: 15 MB/22 GB Uploaded: 16 KB
+Running time: 53 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            15 MB      256 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 250 KB/s Downloaded: 15 MB/22 GB Uploaded: 16 KB
+Running time: 54 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            15 MB      252 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 272 KB/s Downloaded: 16 MB/22 GB Uploaded: 17 KB
+Running time: 55 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            16 MB      272 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 309 KB/s Downloaded: 16 MB/22 GB Uploaded: 17 KB
+Running time: 56 seconds  Time remaining: 20 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            16 MB      308 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 281 KB/s Downloaded: 16 MB/22 GB Uploaded: 17 KB
+Running time: 57 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            16 MB      279 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 281 KB/s Downloaded: 16 MB/22 GB Uploaded: 17 KB
+Running time: 58 seconds  Time remaining: 21 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            16 MB      282 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 250 KB/s Downloaded: 16 MB/22 GB Uploaded: 18 KB
+Running time: 59 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            16 MB      249 KB/s     0 B/s       
+                                                            
+After 60s: 15M
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 201 KB/s Downloaded: 17 MB/22 GB Uploaded: 18 KB
+Running time: 60 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            17 MB      200 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 163 KB/s Downloaded: 17 MB/22 GB Uploaded: 18 KB
+Running time: 61 seconds  Time remaining: 2 days  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            17 MB      164 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 153 KB/s Downloaded: 17 MB/22 GB Uploaded: 18 KB
+Running time: 62 seconds  Time remaining: 2 days  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            17 MB      151 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 177 KB/s Downloaded: 17 MB/22 GB Uploaded: 18 KB
+Running time: 63 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            17 MB      177 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 212 KB/s Downloaded: 18 MB/22 GB Uploaded: 19 KB
+Running time: 64 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            18 MB      210 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 271 KB/s Downloaded: 18 MB/22 GB Uploaded: 19 KB
+Running time: 65 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            18 MB      269 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 339 KB/s Downloaded: 18 MB/22 GB Uploaded: 20 KB
+Running time: 66 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            18 MB      338 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 376 KB/s Downloaded: 19 MB/22 GB Uploaded: 20 KB
+Running time: 67 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            19 MB      374 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 398 KB/s Downloaded: 19 MB/22 GB Uploaded: 21 KB
+Running time: 68 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            19 MB      396 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 387 KB/s Downloaded: 20 MB/22 GB Uploaded: 21 KB
+Running time: 69 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            20 MB      387 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 355 KB/s Downloaded: 20 MB/22 GB Uploaded: 21 KB
+Running time: 70 seconds  Time remaining: 17 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            20 MB      354 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 323 KB/s Downloaded: 20 MB/22 GB Uploaded: 21 KB
+Running time: 71 seconds  Time remaining: 19 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            20 MB      321 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 298 KB/s Downloaded: 20 MB/22 GB Uploaded: 22 KB
+Running time: 72 seconds  Time remaining: 20 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            20 MB      298 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 319 KB/s Downloaded: 21 MB/22 GB Uploaded: 22 KB
+Running time: 73 seconds  Time remaining: 19 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            21 MB      318 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 331 KB/s Downloaded: 21 MB/22 GB Uploaded: 23 KB
+Running time: 74 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            21 MB      331 KB/s     0 B/s       
+                                                            
+After 75s: 21M
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 331 KB/s Downloaded: 22 MB/22 GB Uploaded: 23 KB
+Running time: 75 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            22 MB      331 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 304 KB/s Downloaded: 22 MB/22 GB Uploaded: 23 KB
+Running time: 76 seconds  Time remaining: 20 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            22 MB      301 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 270 KB/s Downloaded: 22 MB/22 GB Uploaded: 23 KB
+Running time: 77 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            22 MB      272 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 219 KB/s Downloaded: 22 MB/22 GB Uploaded: 23 KB
+Running time: 78 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            22 MB      220 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 198 KB/s Downloaded: 22 MB/22 GB Uploaded: 24 KB
+Running time: 79 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            22 MB      200 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 214 KB/s Downloaded: 23 MB/22 GB Uploaded: 24 KB
+Running time: 80 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            23 MB      213 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 214 KB/s Downloaded: 23 MB/22 GB Uploaded: 24 KB
+Running time: 81 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            23 MB      213 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 199 KB/s Downloaded: 23 MB/22 GB Uploaded: 24 KB
+Running time: 82 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            23 MB      197 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 197 KB/s Downloaded: 23 MB/22 GB Uploaded: 25 KB
+Running time: 83 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            23 MB      197 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 206 KB/s Downloaded: 23 MB/22 GB Uploaded: 25 KB
+Running time: 84 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            23 MB      206 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 181 KB/s Downloaded: 24 MB/22 GB Uploaded: 25 KB
+Running time: 85 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            24 MB      180 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 174 KB/s Downloaded: 24 MB/22 GB Uploaded: 25 KB
+Running time: 86 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            24 MB      174 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 183 KB/s Downloaded: 24 MB/22 GB Uploaded: 25 KB
+Running time: 87 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            24 MB      184 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 177 KB/s Downloaded: 24 MB/22 GB Uploaded: 25 KB
+Running time: 88 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            24 MB      177 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2023-07%20July/Wolf%20Tease%20Uncen.mp4
+Downloading to: /tmp/3dimm_dl3/
+Speed: 180 KB/s Downloaded: 24 MB/22 GB Uploaded: 26 KB
+Running time: 89 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            24 MB      180 KB/s     0 B/s       
+                                                            
+After 90s: 23M

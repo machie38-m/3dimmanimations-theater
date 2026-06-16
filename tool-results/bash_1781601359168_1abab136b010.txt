@@ -1,0 +1,1103 @@
+
+fetching torrent metadata from 0 peers
+verifying existing torrent data...
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 237 B/s Downloaded: 0 B/22 GB Uploaded: 167 B
+Running time: 1 seconds  Time remaining: 3 years  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            0 B        0 B/s        0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 12 KB/s Downloaded: 16 KB/22 GB Uploaded: 235 B
+Running time: 2 seconds  Time remaining: 21 days  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            16 KB      9.6 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 50 KB/s Downloaded: 147 KB/22 GB Uploaded: 422 B
+Running time: 3 seconds  Time remaining: 5 days  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            147 KB     55 KB/s      0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 111 KB/s Downloaded: 459 KB/22 GB Uploaded: 745 B
+Running time: 4 seconds  Time remaining: 2 days  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            459 KB     124 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 177 KB/s Downloaded: 885 KB/22 GB Uploaded: 1.2 KB
+Running time: 5 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            885 KB     188 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 320 KB/s Downloaded: 1.6 MB/22 GB Uploaded: 2.1 KB
+Running time: 6 seconds  Time remaining: 19 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            1.6 MB     318 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 395 KB/s Downloaded: 2.0 MB/22 GB Uploaded: 2.7 KB
+Running time: 7 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            2.0 MB     393 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 448 KB/s Downloaded: 2.4 MB/22 GB Uploaded: 3.2 KB
+Running time: 8 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            2.4 MB     449 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 466 KB/s Downloaded: 2.9 MB/22 GB Uploaded: 3.5 KB
+Running time: 9 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            2.9 MB     465 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 455 KB/s Downloaded: 3.2 MB/22 GB Uploaded: 4.0 KB
+Running time: 10 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            3.2 MB     455 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 403 KB/s Downloaded: 3.6 MB/22 GB Uploaded: 4.2 KB
+Running time: 11 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            3.6 MB     400 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 402 KB/s Downloaded: 4.1 MB/22 GB Uploaded: 4.6 KB
+Running time: 12 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            4.1 MB     387 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 391 KB/s Downloaded: 4.5 MB/22 GB Uploaded: 5.1 KB
+Running time: 13 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            4.5 MB     390 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 394 KB/s Downloaded: 4.9 MB/22 GB Uploaded: 5.5 KB
+Running time: 14 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            4.9 MB     387 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 413 KB/s Downloaded: 5.3 MB/22 GB Uploaded: 6.0 KB
+Running time: 15 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            5.3 MB     413 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 448 KB/s Downloaded: 5.9 MB/22 GB Uploaded: 6.8 KB
+Running time: 16 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            5.9 MB     449 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 483 KB/s Downloaded: 6.6 MB/22 GB Uploaded: 7.5 KB
+Running time: 17 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            6.6 MB     469 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 568 KB/s Downloaded: 7.4 MB/22 GB Uploaded: 8.4 KB
+Running time: 18 seconds  Time remaining: 11 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            7.4 MB     567 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 596 KB/s Downloaded: 7.9 MB/22 GB Uploaded: 8.7 KB
+Running time: 19 seconds  Time remaining: 10 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            7.9 MB     593 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 598 KB/s Downloaded: 8.4 MB/22 GB Uploaded: 9.4 KB
+Running time: 20 seconds  Time remaining: 10 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            8.4 MB     596 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 603 KB/s Downloaded: 9.1 MB/22 GB Uploaded: 10 KB
+Running time: 21 seconds  Time remaining: 10 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            9.1 MB     603 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 565 KB/s Downloaded: 9.5 MB/22 GB Uploaded: 11 KB
+Running time: 22 seconds  Time remaining: 11 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            9.5 MB     564 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 503 KB/s Downloaded: 10.0 MB/22 GB Uploaded: 11 KB
+Running time: 23 seconds  Time remaining: 12 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            10.0 MB    508 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 503 KB/s Downloaded: 10 MB/22 GB Uploaded: 12 KB
+Running time: 24 seconds  Time remaining: 12 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            10 MB      505 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 452 KB/s Downloaded: 11 MB/22 GB Uploaded: 12 KB
+Running time: 25 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            11 MB      449 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 353 KB/s Downloaded: 11 MB/22 GB Uploaded: 12 KB
+Running time: 26 seconds  Time remaining: 17 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            11 MB      377 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 314 KB/s Downloaded: 11 MB/22 GB Uploaded: 12 KB
+Running time: 27 seconds  Time remaining: 19 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            11 MB      315 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 274 KB/s Downloaded: 11 MB/22 GB Uploaded: 12 KB
+Running time: 28 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            11 MB      292 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 237 KB/s Downloaded: 12 MB/22 GB Uploaded: 13 KB
+Running time: 29 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            12 MB      216 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 224 KB/s Downloaded: 12 MB/22 GB Uploaded: 13 KB
+Running time: 30 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            12 MB      223 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 277 KB/s Downloaded: 12 MB/22 GB Uploaded: 13 KB
+Running time: 31 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            12 MB      279 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 296 KB/s Downloaded: 13 MB/22 GB Uploaded: 14 KB
+Running time: 32 seconds  Time remaining: 20 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            13 MB      295 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 284 KB/s Downloaded: 13 MB/22 GB Uploaded: 14 KB
+Running time: 33 seconds  Time remaining: 21 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            13 MB      285 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 294 KB/s Downloaded: 13 MB/22 GB Uploaded: 14 KB
+Running time: 34 seconds  Time remaining: 21 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            13 MB      285 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 306 KB/s Downloaded: 14 MB/22 GB Uploaded: 15 KB
+Running time: 35 seconds  Time remaining: 20 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            14 MB      305 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 323 KB/s Downloaded: 14 MB/22 GB Uploaded: 15 KB
+Running time: 36 seconds  Time remaining: 19 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            14 MB      321 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 367 KB/s Downloaded: 15 MB/22 GB Uploaded: 16 KB
+Running time: 37 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            15 MB      367 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 454 KB/s Downloaded: 15 MB/22 GB Uploaded: 16 KB
+Running time: 38 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            15 MB      452 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 471 KB/s Downloaded: 16 MB/22 GB Uploaded: 17 KB
+Running time: 39 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            16 MB      469 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 448 KB/s Downloaded: 16 MB/22 GB Uploaded: 17 KB
+Running time: 40 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            16 MB      446 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 430 KB/s Downloaded: 16 MB/22 GB Uploaded: 17 KB
+Running time: 41 seconds  Time remaining: 14 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            16 MB      410 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 389 KB/s Downloaded: 17 MB/22 GB Uploaded: 18 KB
+Running time: 42 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            17 MB      390 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 300 KB/s Downloaded: 17 MB/22 GB Uploaded: 18 KB
+Running time: 43 seconds  Time remaining: 20 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            17 MB      298 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 274 KB/s Downloaded: 17 MB/22 GB Uploaded: 18 KB
+Running time: 44 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            17 MB      272 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 260 KB/s Downloaded: 17 MB/22 GB Uploaded: 18 KB
+Running time: 45 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            17 MB      259 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 231 KB/s Downloaded: 17 MB/22 GB Uploaded: 19 KB
+Running time: 46 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            17 MB      213 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 174 KB/s Downloaded: 18 MB/22 GB Uploaded: 19 KB
+Running time: 47 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            18 MB      174 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 179 KB/s Downloaded: 18 MB/22 GB Uploaded: 19 KB
+Running time: 48 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            18 MB      174 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 193 KB/s Downloaded: 18 MB/22 GB Uploaded: 19 KB
+Running time: 49 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            18 MB      193 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 186 KB/s Downloaded: 18 MB/22 GB Uploaded: 19 KB
+Running time: 50 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            18 MB      187 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 211 KB/s Downloaded: 18 MB/22 GB Uploaded: 20 KB
+Running time: 51 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            18 MB      213 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 268 KB/s Downloaded: 19 MB/22 GB Uploaded: 20 KB
+Running time: 52 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            19 MB      269 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 337 KB/s Downloaded: 19 MB/22 GB Uploaded: 21 KB
+Running time: 53 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            19 MB      328 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 351 KB/s Downloaded: 20 MB/22 GB Uploaded: 21 KB
+Running time: 54 seconds  Time remaining: 17 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            20 MB      351 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 365 KB/s Downloaded: 20 MB/22 GB Uploaded: 21 KB
+Running time: 55 seconds  Time remaining: 17 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            20 MB      364 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 337 KB/s Downloaded: 20 MB/22 GB Uploaded: 21 KB
+Running time: 56 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            20 MB      334 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 283 KB/s Downloaded: 20 MB/22 GB Uploaded: 22 KB
+Running time: 57 seconds  Time remaining: 21 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            20 MB      285 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 233 KB/s Downloaded: 21 MB/22 GB Uploaded: 22 KB
+Running time: 58 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            21 MB      223 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 211 KB/s Downloaded: 21 MB/22 GB Uploaded: 22 KB
+Running time: 59 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            21 MB      210 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 210 KB/s Downloaded: 21 MB/22 GB Uploaded: 22 KB
+Running time: 60 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            21 MB      210 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 234 KB/s Downloaded: 21 MB/22 GB Uploaded: 23 KB
+Running time: 61 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            21 MB      233 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 288 KB/s Downloaded: 22 MB/22 GB Uploaded: 23 KB
+Running time: 62 seconds  Time remaining: 21 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            22 MB      288 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 337 KB/s Downloaded: 22 MB/22 GB Uploaded: 24 KB
+Running time: 63 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            22 MB      324 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 399 KB/s Downloaded: 23 MB/22 GB Uploaded: 24 KB
+Running time: 64 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            23 MB      400 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 460 KB/s Downloaded: 23 MB/22 GB Uploaded: 25 KB
+Running time: 65 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            23 MB      459 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 474 KB/s Downloaded: 24 MB/22 GB Uploaded: 25 KB
+Running time: 66 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            24 MB      472 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 461 KB/s Downloaded: 24 MB/22 GB Uploaded: 26 KB
+Running time: 67 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            24 MB      459 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 430 KB/s Downloaded: 25 MB/22 GB Uploaded: 26 KB
+Running time: 68 seconds  Time remaining: 14 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            25 MB      406 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 371 KB/s Downloaded: 25 MB/22 GB Uploaded: 26 KB
+Running time: 69 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            25 MB      370 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 328 KB/s Downloaded: 25 MB/22 GB Uploaded: 27 KB
+Running time: 70 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            25 MB      328 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 324 KB/s Downloaded: 26 MB/22 GB Uploaded: 27 KB
+Running time: 71 seconds  Time remaining: 19 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            26 MB      324 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 318 KB/s Downloaded: 26 MB/22 GB Uploaded: 27 KB
+Running time: 72 seconds  Time remaining: 19 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            26 MB      318 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 314 KB/s Downloaded: 26 MB/22 GB Uploaded: 28 KB
+Running time: 73 seconds  Time remaining: 19 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            26 MB      301 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 338 KB/s Downloaded: 27 MB/22 GB Uploaded: 28 KB
+Running time: 74 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            27 MB      338 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 392 KB/s Downloaded: 27 MB/22 GB Uploaded: 29 KB
+Running time: 75 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            27 MB      380 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 375 KB/s Downloaded: 28 MB/22 GB Uploaded: 29 KB
+Running time: 76 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            28 MB      374 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 372 KB/s Downloaded: 28 MB/22 GB Uploaded: 29 KB
+Running time: 77 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            28 MB      370 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 352 KB/s Downloaded: 28 MB/22 GB Uploaded: 30 KB
+Running time: 78 seconds  Time remaining: 17 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            28 MB      351 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 291 KB/s Downloaded: 28 MB/22 GB Uploaded: 30 KB
+Running time: 79 seconds  Time remaining: 21 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            28 MB      292 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 248 KB/s Downloaded: 28 MB/22 GB Uploaded: 30 KB
+Running time: 80 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            28 MB      226 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 205 KB/s Downloaded: 29 MB/22 GB Uploaded: 30 KB
+Running time: 81 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            29 MB      206 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 203 KB/s Downloaded: 29 MB/22 GB Uploaded: 30 KB
+Running time: 82 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            29 MB      203 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 207 KB/s Downloaded: 29 MB/22 GB Uploaded: 31 KB
+Running time: 83 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            29 MB      206 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 205 KB/s Downloaded: 29 MB/22 GB Uploaded: 31 KB
+Running time: 84 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            29 MB      203 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 205 KB/s Downloaded: 29 MB/22 GB Uploaded: 31 KB
+Running time: 85 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            29 MB      197 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 195 KB/s Downloaded: 30 MB/22 GB Uploaded: 31 KB
+Running time: 86 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            30 MB      193 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 195 KB/s Downloaded: 30 MB/22 GB Uploaded: 32 KB
+Running time: 87 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            30 MB      197 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 208 KB/s Downloaded: 30 MB/22 GB Uploaded: 32 KB
+Running time: 88 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            30 MB      206 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 220 KB/s Downloaded: 30 MB/22 GB Uploaded: 32 KB
+Running time: 89 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            30 MB      220 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 233 KB/s Downloaded: 31 MB/22 GB Uploaded: 32 KB
+Running time: 90 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            31 MB      223 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 221 KB/s Downloaded: 31 MB/22 GB Uploaded: 32 KB
+Running time: 91 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            31 MB      220 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 192 KB/s Downloaded: 31 MB/22 GB Uploaded: 33 KB
+Running time: 92 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            31 MB      190 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 237 KB/s Downloaded: 31 MB/22 GB Uploaded: 33 KB
+Running time: 93 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            31 MB      236 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 334 KB/s Downloaded: 32 MB/22 GB Uploaded: 34 KB
+Running time: 94 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            32 MB      334 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 386 KB/s Downloaded: 33 MB/22 GB Uploaded: 34 KB
+Running time: 95 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            33 MB      374 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 486 KB/s Downloaded: 33 MB/22 GB Uploaded: 35 KB
+Running time: 96 seconds  Time remaining: 12 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            33 MB      485 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 552 KB/s Downloaded: 34 MB/22 GB Uploaded: 36 KB
+Running time: 97 seconds  Time remaining: 11 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            34 MB      521 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 517 KB/s Downloaded: 34 MB/22 GB Uploaded: 36 KB
+Running time: 98 seconds  Time remaining: 12 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            34 MB      518 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 527 KB/s Downloaded: 35 MB/22 GB Uploaded: 37 KB
+Running time: 99 seconds  Time remaining: 11 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            35 MB      514 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 531 KB/s Downloaded: 35 MB/22 GB Uploaded: 37 KB
+Running time: 100 seconds  Time remaining: 11 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            35 MB      531 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 477 KB/s Downloaded: 36 MB/22 GB Uploaded: 38 KB
+Running time: 101 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            36 MB      475 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 470 KB/s Downloaded: 36 MB/22 GB Uploaded: 38 KB
+Running time: 102 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            36 MB      472 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 449 KB/s Downloaded: 36 MB/22 GB Uploaded: 39 KB
+Running time: 103 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            36 MB      449 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 426 KB/s Downloaded: 37 MB/22 GB Uploaded: 39 KB
+Running time: 104 seconds  Time remaining: 14 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            37 MB      403 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 391 KB/s Downloaded: 37 MB/22 GB Uploaded: 39 KB
+Running time: 105 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            37 MB      390 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 385 KB/s Downloaded: 38 MB/22 GB Uploaded: 40 KB
+Running time: 106 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            38 MB      387 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 340 KB/s Downloaded: 38 MB/22 GB Uploaded: 40 KB
+Running time: 107 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            38 MB      341 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 327 KB/s Downloaded: 38 MB/22 GB Uploaded: 40 KB
+Running time: 108 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            38 MB      324 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 315 KB/s Downloaded: 38 MB/22 GB Uploaded: 40 KB
+Running time: 109 seconds  Time remaining: 19 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            38 MB      301 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 275 KB/s Downloaded: 39 MB/22 GB Uploaded: 41 KB
+Running time: 110 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            39 MB      275 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 273 KB/s Downloaded: 39 MB/22 GB Uploaded: 41 KB
+Running time: 111 seconds  Time remaining: a day  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            39 MB      272 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 297 KB/s Downloaded: 39 MB/22 GB Uploaded: 41 KB
+Running time: 112 seconds  Time remaining: 20 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            39 MB      298 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 306 KB/s Downloaded: 40 MB/22 GB Uploaded: 42 KB
+Running time: 113 seconds  Time remaining: 20 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            40 MB      305 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 327 KB/s Downloaded: 40 MB/22 GB Uploaded: 42 KB
+Running time: 114 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            40 MB      324 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 343 KB/s Downloaded: 40 MB/22 GB Uploaded: 43 KB
+Running time: 115 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            40 MB      344 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 345 KB/s Downloaded: 41 MB/22 GB Uploaded: 43 KB
+Running time: 116 seconds  Time remaining: 17 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            41 MB      328 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 336 KB/s Downloaded: 41 MB/22 GB Uploaded: 43 KB
+Running time: 117 seconds  Time remaining: 18 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            41 MB      334 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 376 KB/s Downloaded: 42 MB/22 GB Uploaded: 44 KB
+Running time: 118 seconds  Time remaining: 16 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            42 MB      377 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 411 KB/s Downloaded: 42 MB/22 GB Uploaded: 45 KB
+Running time: 119 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            42 MB      406 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 414 KB/s Downloaded: 43 MB/22 GB Uploaded: 45 KB
+Running time: 120 seconds  Time remaining: 15 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            43 MB      413 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 451 KB/s Downloaded: 43 MB/22 GB Uploaded: 45 KB
+Running time: 121 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            43 MB      439 KB/s     0 B/s       
+                                                            
+Downloading: 3DimmAnimations Collection
+Info hash: 910d38165a92485db3916c0408d8813b2d7d1ea6
+Server running at: http://localhost:8000/webtorrent/910d38165a92485db3916c0408d8813b2d7d1ea6/3DimmAnimations%20Collection/2022-05%20May/Anya%20Tease.mp4
+Downloading to: /tmp/3dimm_dl2/
+Speed: 451 KB/s Downloaded: 43 MB/22 GB Uploaded: 46 KB
+Running time: 122 seconds  Time remaining: 13 hours  Peers: 1/1
+
+S   UTPOUT  194.126.168.206:45419            43 MB      452 KB/s     0 B/s       
+                                                            
+
+webtorrent is exiting...

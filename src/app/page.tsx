@@ -21,9 +21,13 @@ import {
   Grid3X3,
   LayoutList,
   ArrowUp,
-  Heart,
   Eye,
   Star,
+  Zap,
+  Crown,
+  Layers,
+  TrendingUp,
+  PauseCircle,
 } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -41,6 +45,8 @@ interface VideoData {
   quality: string
   date: string
   views?: number
+  isNew?: boolean
+  isFeatured?: boolean
 }
 
 // ─── Video Data ───────────────────────────────────────────────────────
@@ -56,7 +62,8 @@ const videos: VideoData[] = [
     url: `${CDN_BASE}/Eula_Hilichurl_Trouble.mp4`,
     description: 'Eula encounters hilichurls in the wild. Things start in her favor but quickly take a turn for the worse.',
     quality: '1080p',
-    date: '2022-03',
+    date: '2021-06',
+    isFeatured: true,
   },
   {
     id: 'ganyu-forest-trouble',
@@ -67,7 +74,7 @@ const videos: VideoData[] = [
     url: `${CDN_BASE}/Ganyu_Forest_Trouble.mp4`,
     description: 'Ganyu ventures into the forest and encounters unexpected trouble. A classic 3DimmAnimations Genshin piece.',
     quality: '1080p',
-    date: '2022-02',
+    date: '2021-03',
   },
   {
     id: 'hu-tao-riding',
@@ -76,9 +83,9 @@ const videos: VideoData[] = [
     duration: '1:56',
     durationSeconds: 116,
     url: `${CDN_BASE}/Hu_Tao_Riding.mp4`,
-    description: 'Hu Tao riding animation. One of the most iconic 3DimmAnimations Genshin works.',
+    description: 'Hu Tao riding animation. One of the most iconic 3DimmAnimations Genshin works with signature flair.',
     quality: '1080p',
-    date: '2022-01',
+    date: '2021-03',
   },
   {
     id: 'hu-tao-dimm',
@@ -87,9 +94,9 @@ const videos: VideoData[] = [
     duration: '2:00',
     durationSeconds: 120,
     url: `${CDN_BASE}/Hu_Tao_Dimm.mp4`,
-    description: 'Hu Tao in a special Dimm animation. Enhanced quality version by 3DimmAnimations.',
+    description: 'Hu Tao in a special Dimm animation. Enhanced quality version by 3DimmAnimations with no background music.',
     quality: '1080p',
-    date: '2022-01',
+    date: '2021-03',
   },
   {
     id: 'yae-gorou-shenanigans',
@@ -98,42 +105,42 @@ const videos: VideoData[] = [
     duration: '6:00',
     durationSeconds: 360,
     url: `${CDN_BASE}/Yae_Gorou_Shenanigans.mp4`,
-    description: 'Yae Miko and Gorou in their signature shenanigans. A longer animation with detailed storytelling.',
+    description: 'Yae Miko and Gorou in their signature shenanigans. A longer animation with detailed storytelling and character interaction.',
     quality: '1080p',
     date: '2022-02',
   },
   {
     id: 'bunny-bar-1-klee',
-    title: 'Bunny Bar Pt. 1 - Klee',
+    title: 'Bunny Bar Pt.1 - Klee',
     series: 'Genshin Impact',
     duration: '2:50',
     durationSeconds: 170,
     url: `${CDN_BASE}/Bunny_Bar_1_Klee.mp4`,
-    description: 'Bunny Bar Special Part 1 featuring Klee. The iconic Bunny Bar series by 3DimmAnimations.',
+    description: 'Bunny Bar Special Part 1 featuring Klee. The iconic Bunny Bar series that started it all by 3DimmAnimations.',
     quality: '1080p',
-    date: '2021-12',
+    date: '2021-04',
   },
   {
     id: 'bunny-bar-2-diona',
-    title: 'Bunny Bar Pt. 2 - Diona',
+    title: 'Bunny Bar Pt.2 - Diona',
     series: 'Genshin Impact',
     duration: '3:45',
     durationSeconds: 225,
     url: `${CDN_BASE}/Bunny_Bar_2_Diona.mp4`,
     description: 'Bunny Bar Special Part 2 featuring Diona. The second installment of the beloved Bunny Bar series.',
     quality: '1080p',
-    date: '2021-12',
+    date: '2021-05',
   },
   {
     id: 'bunny-bar-3-qiqi',
-    title: 'Bunny Bar Pt. 3 - Qiqi',
+    title: 'Bunny Bar Pt.3 - Qiqi',
     series: 'Genshin Impact',
     duration: '4:23',
     durationSeconds: 263,
     url: `${CDN_BASE}/Bunny_Bar_3_Qiqi.mp4`,
-    description: 'Bunny Bar Special Part 3 featuring Qiqi. The grand finale of the Bunny Bar trilogy.',
+    description: 'Bunny Bar Special Part 3 featuring Qiqi. The grand finale of the Bunny Bar trilogy by 3DimmAnimations.',
     quality: '720p',
-    date: '2021-12',
+    date: '2021-07',
   },
   {
     id: 'kokkoro-salad',
@@ -153,9 +160,9 @@ const videos: VideoData[] = [
     duration: '5:45',
     durationSeconds: 345,
     url: `${CDN_BASE}/Takagi_Chi_2K.mp4`,
-    description: 'Takagi-san and Chii in a heartwarming family bonding animation. High resolution 2K version.',
+    description: 'Takagi-san and Chii in a heartwarming family bonding animation. High resolution 2K version with exceptional detail.',
     quality: '2K',
-    date: '2022-05',
+    date: '2022-03',
   },
   {
     id: 'aharen-4k',
@@ -164,9 +171,10 @@ const videos: VideoData[] = [
     duration: '6:30',
     durationSeconds: 390,
     url: `${CDN_BASE}/Aharen_4K.mp4`,
-    description: 'Aharen-san and Raidou after class. Ultra high definition 4K animation by 3DimmAnimations.',
+    description: 'Aharen-san and Raidou after class. Ultra high definition 4K animation — the highest quality 3DimmAnimations release.',
     quality: '4K',
     date: '2022-06',
+    isNew: true,
   },
   {
     id: 'hook-missionary',
@@ -175,9 +183,10 @@ const videos: VideoData[] = [
     duration: '3:40',
     durationSeconds: 220,
     url: `${CDN_BASE}/Hook_Missionary.mp4`,
-    description: 'Hook from Honkai Star Rail. One of the first HSR animations by 3DimmAnimations.',
+    description: 'Hook from Honkai Star Rail in one of the first HSR animations by 3DimmAnimations.',
     quality: '1080p',
-    date: '2023-05',
+    date: '2023-07',
+    isNew: true,
   },
 ]
 
@@ -189,7 +198,10 @@ const seriesConfig: Record<string, {
   border: string
   glow: string
   gradient: string
+  gradientFrom: string
+  gradientTo: string
   icon: string
+  tagColor: string
 }> = {
   'Genshin Impact': {
     color: 'text-amber-300',
@@ -198,7 +210,10 @@ const seriesConfig: Record<string, {
     border: 'border-amber-500/20',
     glow: 'shadow-amber-500/15',
     gradient: 'from-amber-600/80 to-orange-600/80',
+    gradientFrom: 'from-amber-900/60',
+    gradientTo: 'to-orange-900/40',
     icon: '⚡',
+    tagColor: 'text-amber-400',
   },
   'Honkai Star Rail': {
     color: 'text-sky-300',
@@ -207,7 +222,10 @@ const seriesConfig: Record<string, {
     border: 'border-sky-500/20',
     glow: 'shadow-sky-500/15',
     gradient: 'from-sky-600/80 to-blue-600/80',
+    gradientFrom: 'from-sky-900/60',
+    gradientTo: 'to-blue-900/40',
     icon: '🌟',
+    tagColor: 'text-sky-400',
   },
   'Takagi-san': {
     color: 'text-rose-300',
@@ -216,7 +234,10 @@ const seriesConfig: Record<string, {
     border: 'border-rose-500/20',
     glow: 'shadow-rose-500/15',
     gradient: 'from-rose-600/80 to-pink-600/80',
+    gradientFrom: 'from-rose-900/60',
+    gradientTo: 'to-pink-900/40',
     icon: '💕',
+    tagColor: 'text-rose-400',
   },
   'Aharen-san': {
     color: 'text-emerald-300',
@@ -225,7 +246,10 @@ const seriesConfig: Record<string, {
     border: 'border-emerald-500/20',
     glow: 'shadow-emerald-500/15',
     gradient: 'from-emerald-600/80 to-teal-600/80',
+    gradientFrom: 'from-emerald-900/60',
+    gradientTo: 'to-teal-900/40',
     icon: '🍃',
+    tagColor: 'text-emerald-400',
   },
   'Princess Connect': {
     color: 'text-violet-300',
@@ -234,7 +258,10 @@ const seriesConfig: Record<string, {
     border: 'border-violet-500/20',
     glow: 'shadow-violet-500/15',
     gradient: 'from-violet-600/80 to-purple-600/80',
+    gradientFrom: 'from-violet-900/60',
+    gradientTo: 'to-purple-900/40',
     icon: '👑',
+    tagColor: 'text-violet-400',
   },
 }
 
@@ -246,56 +273,76 @@ function VideoThumbnail({ video, className = '' }: { video: VideoData; className
   const initial = video.title.charAt(0).toUpperCase()
 
   return (
-    <div className={`relative overflow-hidden ${className}`}>
-      {/* Base gradient */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${config.gradient}`} />
-      {/* Depth layers */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent" />
-      {/* Geometric pattern */}
+    <div className={'relative overflow-hidden ' + className}>
+      <div className={'absolute inset-0 bg-gradient-to-br ' + config.gradient} />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
+      {/* Geometric diamond pattern */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: `linear-gradient(30deg, rgba(212,160,74,0.5) 12%, transparent 12.5%, transparent 87%, rgba(212,160,74,0.5) 87.5%, rgba(212,160,74,0.5)),
-          linear-gradient(150deg, rgba(212,160,74,0.5) 12%, transparent 12.5%, transparent 87%, rgba(212,160,74,0.5) 87.5%, rgba(212,160,74,0.5)),
-          linear-gradient(30deg, rgba(212,160,74,0.5) 12%, transparent 12.5%, transparent 87%, rgba(212,160,74,0.5) 87.5%, rgba(212,160,74,0.5)),
-          linear-gradient(150deg, rgba(212,160,74,0.5) 12%, transparent 12.5%, transparent 87%, rgba(212,160,74,0.5) 87.5%, rgba(212,160,74,0.5))`,
-        backgroundSize: '80px 140px',
-        backgroundPosition: '0 0, 0 0, 40px 70px, 40px 70px',
+        backgroundImage: `repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 35px,
+          rgba(212,160,74,0.4) 35px,
+          rgba(212,160,74,0.4) 36px
+        ), repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 35px,
+          rgba(212,160,74,0.4) 35px,
+          rgba(212,160,74,0.4) 36px
+        )`,
       }} />
-      {/* Large initial */}
+      {/* Large initial letter */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <span className="text-white/[0.07] font-bold select-none tracking-tighter" style={{ fontSize: '10rem', lineHeight: 0.8 }}>
+        <span className="text-white/[0.05] font-bold select-none tracking-tighter" style={{ fontSize: '11rem', lineHeight: 0.7 }}>
           {initial}
         </span>
       </div>
-      {/* Play icon */}
+      {/* Play icon center */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-14 h-14 rounded-full bg-white/[0.08] backdrop-blur-sm flex items-center justify-center border border-white/[0.12] transition-all duration-500 group-hover:scale-110 group-hover:bg-white/[0.12] group-hover:border-[oklch(84%_0.19_80.46/0.3)]">
-          <Play className="w-6 h-6 text-white/70 ml-0.5" />
+        <div className="w-16 h-16 rounded-full bg-white/[0.06] backdrop-blur-sm flex items-center justify-center border border-white/[0.1] transition-all duration-500 group-hover:scale-110 group-hover:bg-white/[0.1] group-hover:border-[oklch(84%_0.19_80.46/0.3)] group-hover:shadow-lg group-hover:shadow-[oklch(84%_0.19_80.46/0.1)]">
+          <Play className="w-7 h-7 text-white/60 ml-0.5 group-hover:text-white/80 transition-colors" />
         </div>
       </div>
-      {/* Duration */}
-      <div className="absolute bottom-2.5 right-2.5 bg-black/60 backdrop-blur-md text-white/90 text-[10px] px-2 py-0.5 rounded font-mono tracking-wider flex items-center gap-1 border border-white/[0.06]">
-        <Clock className="w-2.5 h-2.5" />
+      {/* Duration pill */}
+      <div className="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md text-white/90 text-[10px] px-2.5 py-1 rounded-md font-mono tracking-wider flex items-center gap-1.5 border border-white/[0.06]">
+        <Clock className="w-2.5 h-2.5 text-white/50" />
         {video.duration}
       </div>
       {/* Quality badge */}
-      <div className="absolute top-2.5 right-2.5">
-        <span className="text-[10px] px-1.5 py-0.5 rounded font-mono tracking-wider bg-[oklch(84%_0.19_80.46/0.15)] text-[oklch(84%_0.15_80.46)] border border-[oklch(84%_0.19_80.46/0.2)]">
+      <div className="absolute top-3 right-3">
+        <span className="text-[10px] px-2 py-0.5 rounded-md font-mono tracking-wider bg-[oklch(84%_0.19_80.46/0.12)] text-[oklch(84%_0.15_80.46)] border border-[oklch(84%_0.19_80.46/0.18)] backdrop-blur-sm">
           {video.quality}
         </span>
       </div>
       {/* Series badge */}
-      <div className="absolute top-2.5 left-2.5">
-        <span className={`text-[10px] px-2 py-0.5 rounded-md font-medium ${config.bg} ${config.color} border ${config.border} backdrop-blur-sm tracking-wide`}>
+      <div className="absolute top-3 left-3">
+        <span className={'text-[10px] px-2.5 py-0.5 rounded-md font-medium ' + config.bg + ' ' + config.color + ' border ' + config.border + ' backdrop-blur-sm tracking-wide'}>
           {video.series}
         </span>
       </div>
+      {/* New badge */}
+      {video.isNew && (
+        <div className="absolute top-3 left-3 mt-7">
+          <span className="text-[9px] px-1.5 py-0.5 rounded font-mono tracking-wider bg-[oklch(70%_0.12_188/0.15)] text-[oklch(70%_0.12_188)] border border-[oklch(70%_0.12_188/0.2)] uppercase">
+            New
+          </span>
+        </div>
+      )}
     </div>
   )
 }
 
 // ─── Video Player ──────────────────────────────────────────────────────
-function VideoPlayer({ video, onClose }: { video: VideoData; onClose: () => void }) {
+function VideoPlayer({ video, onClose, onPrev, onNext, hasNext, hasPrev }: {
+  video: VideoData
+  onClose: () => void
+  onPrev: () => void
+  onNext: () => void
+  hasNext: boolean
+  hasPrev: boolean
+}) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const progressRef = useRef<HTMLDivElement>(null)
@@ -400,11 +447,13 @@ function VideoPlayer({ video, onClose }: { video: VideoData; onClose: () => void
         case 'ArrowRight': skip(10); break
         case 'f': toggleFullscreen(); break
         case 'm': toggleMute(); break
+        case 'n': if (hasNext) onNext(); break
+        case 'p': if (hasPrev) onPrev(); break
       }
     }
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [onClose, handlePlayPause, skip, toggleFullscreen, toggleMute])
+  }, [onClose, handlePlayPause, skip, toggleFullscreen, toggleMute, hasNext, hasPrev, onNext, onPrev])
 
   useEffect(() => {
     const v = videoRef.current
@@ -431,6 +480,15 @@ function VideoPlayer({ video, onClose }: { video: VideoData; onClose: () => void
     return () => document.removeEventListener('fullscreenchange', handler)
   }, [])
 
+  // Reset state when video changes
+  useEffect(() => {
+    setIsPlaying(false)
+    setCurrentTime(0)
+    setDuration(0)
+    setShowControls(true)
+    setIsBuffering(false)
+  }, [video.id])
+
   const progress = duration > 0 ? (currentTime / duration) * 100 : 0
 
   return (
@@ -446,7 +504,7 @@ function VideoPlayer({ video, onClose }: { video: VideoData; onClose: () => void
 
         {isBuffering && (
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="w-14 h-14 border-2 border-[oklch(84%_0.19_80.46/0.2)] border-t-[oklch(84%_0.19_80.46)] rounded-full animate-spin" />
+            <div className="w-14 h-14 border-2 border-[oklch(84%_0.19_80.46/0.15)] border-t-[oklch(84%_0.19_80.46)] rounded-full animate-spin" />
           </div>
         )}
 
@@ -454,7 +512,7 @@ function VideoPlayer({ video, onClose }: { video: VideoData; onClose: () => void
           {!isPlaying && !isBuffering && (
             <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 1.2 }}
               className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="w-20 h-20 rounded-full bg-[oklch(84%_0.19_80.46/0.15)] backdrop-blur-md flex items-center justify-center border border-[oklch(84%_0.19_80.46/0.2)]">
+              <div className="w-20 h-20 rounded-full bg-[oklch(84%_0.19_80.46/0.12)] backdrop-blur-md flex items-center justify-center border border-[oklch(84%_0.19_80.46/0.2)] shadow-lg shadow-[oklch(84%_0.19_80.46/0.08)]">
                 <Play className="w-10 h-10 text-white/80 ml-1" />
               </div>
             </motion.div>
@@ -466,56 +524,67 @@ function VideoPlayer({ video, onClose }: { video: VideoData; onClose: () => void
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}
               className="absolute inset-0 flex flex-col justify-between pointer-events-none">
               {/* Top bar */}
-              <div className="bg-gradient-to-b from-black/80 via-black/40 to-transparent p-4 md:p-6 pointer-events-auto">
-                <div className="flex items-center gap-3">
-                  <Button variant="ghost" size="icon" onClick={onClose} className="text-white/80 hover:text-white hover:bg-white/10 rounded-full">
+              <div className="bg-gradient-to-b from-black/80 via-black/40 to-transparent p-5 md:p-8 pointer-events-auto">
+                <div className="flex items-center gap-4">
+                  <Button variant="ghost" size="icon" onClick={onClose} className="text-white/80 hover:text-white hover:bg-white/10 rounded-full h-10 w-10">
                     <X className="w-5 h-5" />
                   </Button>
-                  <div>
-                    <h2 className="text-white font-medium text-base tracking-wide">{video.title}</h2>
-                    <p className="text-white/40 text-xs font-mono tracking-wider uppercase mt-0.5">{video.series} · 3DimmAnimations · {video.quality}</p>
+                  <div className="flex-1 min-w-0">
+                    <h2 className="text-white font-semibold text-lg tracking-wide truncate">{video.title}</h2>
+                    <p className="text-white/35 text-xs font-mono tracking-wider uppercase mt-0.5">{video.series} · 3DimmAnimations · {video.quality}</p>
+                  </div>
+                  {/* Nav buttons */}
+                  <div className="flex items-center gap-1">
+                    <Button variant="ghost" size="icon" onClick={onPrev} disabled={!hasPrev}
+                      className="text-white/50 hover:text-white hover:bg-white/10 rounded-full h-9 w-9 disabled:opacity-20">
+                      <SkipBack className="w-4 h-4" />
+                    </Button>
+                    <Button variant="ghost" size="icon" onClick={onNext} disabled={!hasNext}
+                      className="text-white/50 hover:text-white hover:bg-white/10 rounded-full h-9 w-9 disabled:opacity-20">
+                      <SkipForward className="w-4 h-4" />
+                    </Button>
                   </div>
                 </div>
               </div>
 
               {/* Bottom controls */}
-              <div className="bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 md:p-6 pointer-events-auto">
+              <div className="bg-gradient-to-t from-black/80 via-black/40 to-transparent p-5 md:p-8 pointer-events-auto">
                 {/* Progress bar */}
-                <div ref={progressRef} className="relative w-full h-1 bg-white/10 rounded-full cursor-pointer group mb-4 hover:h-1.5 transition-all"
+                <div ref={progressRef} className="relative w-full h-1 bg-white/10 rounded-full cursor-pointer group mb-5 hover:h-1.5 transition-all"
                   onClick={handleProgressClick}>
                   <div className="absolute left-0 top-0 h-full bg-gradient-to-r from-[oklch(84%_0.19_80.46)] to-[oklch(75%_0.15_60)] rounded-full transition-all"
                     style={{ width: `${progress}%` }} />
-                  <div className="absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-[oklch(84%_0.19_80.46)] rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
-                    style={{ left: `calc(${progress}% - 6px)` }} />
+                  <div className="absolute top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-[oklch(84%_0.19_80.46)] rounded-full shadow-lg shadow-[oklch(84%_0.19_80.46/0.3)] opacity-0 group-hover:opacity-100 transition-opacity"
+                    style={{ left: `calc(${progress}% - 7px)` }} />
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1.5">
-                    <Button variant="ghost" size="icon" onClick={() => skip(-10)} className="text-white/70 hover:text-white hover:bg-white/10 rounded-full h-9 w-9">
+                  <div className="flex items-center gap-2">
+                    <Button variant="ghost" size="icon" onClick={() => skip(-10)} className="text-white/60 hover:text-white hover:bg-white/10 rounded-full h-9 w-9">
                       <SkipBack className="w-4 h-4" />
                     </Button>
-                    <Button variant="ghost" size="icon" onClick={handlePlayPause} className="text-white hover:bg-white/10 rounded-full h-10 w-10">
-                      {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6 ml-0.5" />}
+                    <Button variant="ghost" size="icon" onClick={handlePlayPause} className="text-white hover:bg-white/10 rounded-full h-11 w-11">
+                      {isPlaying ? <Pause className="w-7 h-7" /> : <Play className="w-7 h-7 ml-0.5" />}
                     </Button>
-                    <Button variant="ghost" size="icon" onClick={() => skip(10)} className="text-white/70 hover:text-white hover:bg-white/10 rounded-full h-9 w-9">
+                    <Button variant="ghost" size="icon" onClick={() => skip(10)} className="text-white/60 hover:text-white hover:bg-white/10 rounded-full h-9 w-9">
                       <SkipForward className="w-4 h-4" />
                     </Button>
-                    <div className="flex items-center gap-1.5 ml-2">
-                      <Button variant="ghost" size="icon" onClick={toggleMute} className="text-white/70 hover:text-white hover:bg-white/10 rounded-full h-9 w-9">
+                    <div className="flex items-center gap-1.5 ml-3">
+                      <Button variant="ghost" size="icon" onClick={toggleMute} className="text-white/60 hover:text-white hover:bg-white/10 rounded-full h-9 w-9">
                         {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
                       </Button>
-                      <div className="w-20 hidden sm:block">
+                      <div className="w-24 hidden sm:block">
                         <Slider value={[isMuted ? 0 : volume]} min={0} max={1} step={0.01} onValueChange={handleVolumeChange} className="cursor-pointer" />
                       </div>
                     </div>
-                    <span className="text-white/50 text-xs font-mono ml-2 hidden sm:inline tracking-wider">
+                    <span className="text-white/40 text-xs font-mono ml-3 hidden sm:inline tracking-wider">
                       {formatTime(currentTime)} / {formatTime(duration)}
                     </span>
                   </div>
-                  <div className="flex items-center gap-1.5">
+                  <div className="flex items-center gap-2">
                     <div className="relative">
                       <Button variant="ghost" size="sm" onClick={() => setShowSpeedMenu(!showSpeedMenu)}
-                        className="text-white/70 hover:text-white hover:bg-white/10 rounded-full font-mono text-xs h-9">
+                        className="text-white/60 hover:text-white hover:bg-white/10 rounded-full font-mono text-xs h-9">
                         <Settings className="w-3.5 h-3.5 mr-1" />{playbackRate}x
                       </Button>
                       <AnimatePresence>
@@ -524,15 +593,13 @@ function VideoPlayer({ video, onClose }: { video: VideoData; onClose: () => void
                             className="absolute bottom-full right-0 mb-2 bg-[oklch(10%_0.01_95)]/95 backdrop-blur-xl border border-[oklch(84%_0.19_80.46/0.15)] rounded-lg p-1.5 min-w-[90px]">
                             {[0.5, 0.75, 1, 1.25, 1.5, 2].map((speed) => (
                               <button key={speed} onClick={() => changeSpeed(speed)}
-                                className={`w-full text-left px-3 py-1.5 text-xs rounded-md transition-colors font-mono ${
-                                  playbackRate === speed ? 'bg-[oklch(84%_0.19_80.46/0.2)] text-[oklch(84%_0.15_80.46)]' : 'text-white/50 hover:bg-white/5 hover:text-white/80'
-                                }`}>{speed}x</button>
+                                className={'w-full text-left px-3 py-1.5 text-xs rounded-md transition-colors font-mono ' + (playbackRate === speed ? 'bg-[oklch(84%_0.19_80.46/0.2)] text-[oklch(84%_0.15_80.46)]' : 'text-white/50 hover:bg-white/5 hover:text-white/80')}>{speed}x</button>
                             ))}
                           </motion.div>
                         )}
                       </AnimatePresence>
                     </div>
-                    <Button variant="ghost" size="icon" onClick={toggleFullscreen} className="text-white/70 hover:text-white hover:bg-white/10 rounded-full h-9 w-9">
+                    <Button variant="ghost" size="icon" onClick={toggleFullscreen} className="text-white/60 hover:text-white hover:bg-white/10 rounded-full h-9 w-9">
                       {isFullscreen ? <Minimize className="w-4 h-4" /> : <Maximize className="w-4 h-4" />}
                     </Button>
                   </div>
@@ -560,11 +627,21 @@ export default function Home() {
     return matchesFilter && matchesSearch
   })
 
-  const featuredVideo = videos[0]
+  const featuredVideo = videos.find(v => v.isFeatured) || videos[0]
+  const newVideos = videos.filter(v => v.isNew)
+  const playingIndex = playingVideo ? filteredVideos.findIndex(v => v.id === playingVideo.id) : -1
 
   const handleVideoClick = (video: VideoData) => {
     setPlayingVideo(video)
   }
+
+  const handlePrevVideo = useCallback(() => {
+    if (playingIndex > 0) setPlayingVideo(filteredVideos[playingIndex - 1])
+  }, [playingIndex, filteredVideos])
+
+  const handleNextVideo = useCallback(() => {
+    if (playingIndex < filteredVideos.length - 1) setPlayingVideo(filteredVideos[playingIndex + 1])
+  }, [playingIndex, filteredVideos])
 
   useEffect(() => {
     const handleScroll = () => setShowScrollTop(window.scrollY > 400)
@@ -574,61 +651,57 @@ export default function Home() {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
 
-  // Series stats
-  const seriesStats = Object.entries(seriesConfig).map(([name, config]) => ({
-    name,
-    count: videos.filter((v) => v.series === name).length,
-    ...config,
-  }))
-
   return (
     <div className="min-h-screen lacquer-surface text-white selection:bg-[oklch(84%_0.19_80.46/0.25)]">
       {/* ─── Ambient Background ─────────────────────────────────────── */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[oklch(84%_0.19_80.46/0.03)] rounded-full blur-[160px]" />
-        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[oklch(70%_0.12_188/0.03)] rounded-full blur-[140px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[oklch(84%_0.19_80.46/0.015)] rounded-full blur-[200px]" />
+        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[oklch(84%_0.19_80.46/0.025)] rounded-full blur-[180px] animate-pulse" style={{ animationDuration: '8s' }} />
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[oklch(70%_0.12_188/0.025)] rounded-full blur-[160px] animate-pulse" style={{ animationDuration: '10s' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-[oklch(84%_0.19_80.46/0.01)] rounded-full blur-[220px]" />
+        {/* Floating particles */}
+        <div className="absolute top-[20%] left-[10%] w-1 h-1 bg-[oklch(84%_0.19_80.46/0.15)] rounded-full animate-float" style={{ animationDuration: '15s' }} />
+        <div className="absolute top-[60%] right-[15%] w-1 h-1 bg-[oklch(70%_0.12_188/0.15)] rounded-full animate-float" style={{ animationDuration: '20s' }} />
+        <div className="absolute top-[40%] left-[80%] w-0.5 h-0.5 bg-[oklch(84%_0.19_80.46/0.1)] rounded-full animate-float" style={{ animationDuration: '25s' }} />
       </div>
 
       {/* ─── Header ─────────────────────────────────────────────────── */}
-      <header className="relative z-10 border-b hairline-gold sticky top-0 bg-[oklch(7%_0.006_95/85)] backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+      <header className="relative z-10 border-b hairline-gold sticky top-0 bg-[oklch(7%_0.006_95/90)] backdrop-blur-2xl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3.5">
             {/* Logo mark */}
-            <div className="relative w-9 h-9 rounded-lg bg-gradient-to-br from-[oklch(84%_0.19_80.46/0.2)] to-[oklch(84%_0.19_80.46/0.05)] flex items-center justify-center border border-[oklch(84%_0.19_80.46/0.25)]">
-              <Film className="w-4 h-4 text-[oklch(84%_0.19_80.46)]" />
-              <div className="absolute -inset-px rounded-lg bg-gradient-to-br from-[oklch(84%_0.19_80.46/0.1)] to-transparent" />
+            <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-[oklch(84%_0.19_80.46/0.2)] to-[oklch(84%_0.19_80.46/0.03)] flex items-center justify-center border border-[oklch(84%_0.19_80.46/0.25)] gold-glow">
+              <Film className="w-5 h-5 text-[oklch(84%_0.19_80.46)]" />
             </div>
             <div>
-              <h1 className="text-base font-semibold gold-text tracking-wide">3Dimm Theater</h1>
-              <p className="text-[10px] text-white/25 font-mono tracking-[0.2em] uppercase">Premium Animation Collection</p>
+              <h1 className="text-lg font-bold gold-text tracking-wide">3Dimm Theater</h1>
+              <p className="text-[10px] text-white/20 font-mono tracking-[0.25em] uppercase">Premium Animation Collection</p>
             </div>
           </div>
 
           <div className="flex items-center gap-3">
             {/* Search */}
             <div className="relative hidden sm:block">
-              <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-white/25" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-white/20" />
               <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Search animations..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="bg-white/[0.03] border border-[oklch(84%_0.19_80.46/0.1)] rounded-lg pl-8 pr-3 py-1.5 text-xs text-white/80 placeholder-white/20 focus:outline-none focus:border-[oklch(84%_0.19_80.46/0.25)] focus:bg-white/[0.05] transition-all w-40 focus:w-56 font-mono tracking-wide"
+                className="bg-white/[0.03] border border-[oklch(84%_0.19_80.46/0.08)] rounded-xl pl-9 pr-4 py-2 text-xs text-white/80 placeholder-white/15 focus:outline-none focus:border-[oklch(84%_0.19_80.46/0.25)] focus:bg-white/[0.05] focus:shadow-lg focus:shadow-[oklch(84%_0.19_80.46/0.03)] transition-all w-44 focus:w-60 font-mono tracking-wide"
               />
             </div>
             {/* View toggle */}
-            <div className="flex items-center bg-white/[0.03] border border-[oklch(84%_0.19_80.46/0.1)] rounded-lg overflow-hidden">
-              <button onClick={() => setViewMode('grid')} className={`p-1.5 transition-colors ${viewMode === 'grid' ? 'bg-[oklch(84%_0.19_80.46/0.15)] text-[oklch(84%_0.19_80.46)]' : 'text-white/30 hover:text-white/50'}`}>
+            <div className="flex items-center bg-white/[0.03] border border-[oklch(84%_0.19_80.46/0.08)] rounded-xl overflow-hidden">
+              <button onClick={() => setViewMode('grid')} className={'p-2 transition-colors ' + (viewMode === 'grid' ? 'bg-[oklch(84%_0.19_80.46/0.15)] text-[oklch(84%_0.19_80.46)]' : 'text-white/25 hover:text-white/40')}>
                 <Grid3X3 className="w-3.5 h-3.5" />
               </button>
-              <button onClick={() => setViewMode('list')} className={`p-1.5 transition-colors ${viewMode === 'list' ? 'bg-[oklch(84%_0.19_80.46/0.15)] text-[oklch(84%_0.19_80.46)]' : 'text-white/30 hover:text-white/50'}`}>
+              <button onClick={() => setViewMode('list')} className={'p-2 transition-colors ' + (viewMode === 'list' ? 'bg-[oklch(84%_0.19_80.46/0.15)] text-[oklch(84%_0.19_80.46)]' : 'text-white/25 hover:text-white/40')}>
                 <LayoutList className="w-3.5 h-3.5" />
               </button>
             </div>
-            {/* Count */}
-            <Badge variant="outline" className="border-[oklch(84%_0.19_80.46/0.2)] text-[oklch(84%_0.15_80.46)] bg-[oklch(84%_0.19_80.46/0.08)] font-mono text-[10px] tracking-wider">
-              <Sparkles className="w-2.5 h-2.5 mr-1" />{videos.length}
+            {/* Count badge */}
+            <Badge variant="outline" className="border-[oklch(84%_0.19_80.46/0.2)] text-[oklch(84%_0.15_80.46)] bg-[oklch(84%_0.19_80.46/0.08)] font-mono text-[10px] tracking-wider px-3 py-1 rounded-xl">
+              <Sparkles className="w-2.5 h-2.5 mr-1.5" />{videos.length} Videos
             </Badge>
           </div>
         </div>
@@ -636,40 +709,45 @@ export default function Home() {
 
       <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* ─── Hero / Featured ──────────────────────────────────────── */}
-        <section className="mb-12">
-          <div className="flex items-center gap-2 mb-4">
-            <Star className="w-4 h-4 text-[oklch(84%_0.19_80.46)]" />
-            <span className="text-xs font-mono text-[oklch(84%_0.15_80.46)] tracking-[0.15em] uppercase">Featured</span>
-            <div className="flex-1 h-px bg-[oklch(84%_0.19_80.46/0.1)] ml-2" />
+        <section className="mb-16">
+          <div className="flex items-center gap-2.5 mb-5">
+            <Crown className="w-4 h-4 text-[oklch(84%_0.19_80.46)]" />
+            <span className="text-xs font-mono text-[oklch(84%_0.15_80.46)] tracking-[0.2em] uppercase">Featured Animation</span>
+            <div className="flex-1 h-px bg-gradient-to-r from-[oklch(84%_0.19_80.46/0.2)] to-transparent ml-2" />
           </div>
           <motion.div
-            whileHover={{ scale: 1.002 }}
+            whileHover={{ scale: 1.003 }}
             transition={{ type: 'spring', stiffness: 300 }}
-            className="group relative overflow-hidden rounded-xl border border-[oklch(84%_0.19_80.46/0.12)] cursor-pointer gold-glow"
+            className="group relative overflow-hidden rounded-2xl border border-[oklch(84%_0.19_80.46/0.12)] cursor-pointer gold-glow"
             onClick={() => handleVideoClick(featuredVideo)}
           >
-            <div className="relative h-56 sm:h-72 md:h-96">
-              <VideoThumbnail video={featuredVideo} className="absolute inset-0" />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-5 md:p-8">
+            <div className="relative h-64 sm:h-80 md:h-[420px]">
+              <VideoThumbnail video={featuredVideo} className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              {/* Content overlay */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
                 <div className="max-w-xl">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className={`text-[10px] px-2 py-0.5 rounded font-mono tracking-wider ${seriesConfig[featuredVideo.series].bg} ${seriesConfig[featuredVideo.series].color} border ${seriesConfig[featuredVideo.series].border}`}>
+                  <div className="flex items-center gap-2.5 mb-4">
+                    <span className={'text-[10px] px-2.5 py-1 rounded-md font-mono tracking-wider ' + seriesConfig[featuredVideo.series].bg + ' ' + seriesConfig[featuredVideo.series].color + ' border ' + seriesConfig[featuredVideo.series].border}>
                       {featuredVideo.series}
                     </span>
-                    <span className="text-[10px] px-2 py-0.5 rounded font-mono tracking-wider bg-[oklch(84%_0.19_80.46/0.1)] text-[oklch(84%_0.15_80.46)] border border-[oklch(84%_0.19_80.46/0.15)]">
+                    <span className="text-[10px] px-2.5 py-1 rounded-md font-mono tracking-wider bg-[oklch(84%_0.19_80.46/0.1)] text-[oklch(84%_0.15_80.46)] border border-[oklch(84%_0.19_80.46/0.15)]">
                       {featuredVideo.quality}
                     </span>
+                    <span className="text-[10px] px-2.5 py-1 rounded-md font-mono tracking-wider bg-white/[0.03] text-white/30 border border-white/[0.06]">
+                      {featuredVideo.date}
+                    </span>
                   </div>
-                  <h2 className="text-xl md:text-3xl font-semibold text-white mb-2 tracking-wide group-hover:text-[oklch(84%_0.19_80.46)] transition-colors duration-300">
+                  <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 tracking-wide group-hover:text-[oklch(84%_0.19_80.46)] transition-colors duration-500">
                     {featuredVideo.title}
                   </h2>
-                  <p className="text-white/40 text-sm mb-4 line-clamp-2 font-light">{featuredVideo.description}</p>
-                  <div className="flex items-center gap-3">
-                    <Button size="sm" className="bg-[oklch(84%_0.19_80.46/0.2)] hover:bg-[oklch(84%_0.19_80.46/0.3)] text-[oklch(84%_0.19_80.46)] border border-[oklch(84%_0.19_80.46/0.25)] hover:border-[oklch(84%_0.19_80.46/0.4)] shadow-none font-mono text-xs tracking-wider">
-                      <Play className="w-3.5 h-3.5 mr-1.5" />PLAY NOW
+                  <p className="text-white/35 text-sm mb-6 line-clamp-2 font-light leading-relaxed">{featuredVideo.description}</p>
+                  <div className="flex items-center gap-4">
+                    <Button size="default" className="bg-[oklch(84%_0.19_80.46/0.15)] hover:bg-[oklch(84%_0.19_80.46/0.25)] text-[oklch(84%_0.19_80.46)] border border-[oklch(84%_0.19_80.46/0.25)] hover:border-[oklch(84%_0.19_80.46/0.4)] shadow-none font-mono text-xs tracking-widest h-10 px-6 rounded-xl transition-all hover:shadow-lg hover:shadow-[oklch(84%_0.19_80.46/0.1)]">
+                      <Play className="w-4 h-4 mr-2" />PLAY NOW
                     </Button>
-                    <span className="text-white/25 text-xs font-mono flex items-center gap-1 tracking-wider">
+                    <span className="text-white/20 text-xs font-mono flex items-center gap-1.5 tracking-wider">
                       <Clock className="w-3 h-3" />{featuredVideo.duration}
                     </span>
                   </div>
@@ -679,12 +757,58 @@ export default function Home() {
           </motion.div>
         </section>
 
+        {/* ─── New Arrivals ─────────────────────────────────────────── */}
+        {newVideos.length > 0 && (
+          <section className="mb-12">
+            <div className="flex items-center gap-2.5 mb-5">
+              <Zap className="w-4 h-4 text-[oklch(70%_0.12_188)]" />
+              <span className="text-xs font-mono text-[oklch(70%_0.12_188)] tracking-[0.2em] uppercase">New Arrivals</span>
+              <div className="flex-1 h-px bg-gradient-to-r from-[oklch(70%_0.12_188/0.2)] to-transparent ml-2" />
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {newVideos.map((video) => {
+                const config = seriesConfig[video.series]
+                return (
+                  <motion.div key={video.id}
+                    whileHover={{ scale: 1.01 }}
+                    transition={{ type: 'spring', stiffness: 400 }}
+                    className="group cursor-pointer" onClick={() => handleVideoClick(video)}>
+                    <div className="relative overflow-hidden rounded-xl border border-[oklch(70%_0.12_188/0.12)] bg-gradient-to-br from-[oklch(70%_0.12_188/0.04)] to-white/[0.01] hover:border-[oklch(70%_0.12_188/0.25)] transition-all duration-300">
+                      <div className="flex items-center gap-4 p-4">
+                        {/* Mini thumbnail */}
+                        <div className="relative w-24 h-16 rounded-lg overflow-hidden flex-shrink-0">
+                          <div className={'absolute inset-0 bg-gradient-to-br ' + config.gradient} />
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <Play className="w-5 h-5 text-white/50" />
+                          </div>
+                        </div>
+                        {/* Info */}
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-sm font-semibold text-white/85 group-hover:text-[oklch(84%_0.19_80.46)] transition-colors truncate tracking-wide">
+                            {video.title}
+                          </h3>
+                          <div className="flex items-center gap-2 mt-1.5">
+                            <span className={'text-[9px] px-1.5 py-0.5 rounded ' + config.bg + ' ' + config.color + ' border ' + config.border}>{video.series}</span>
+                            <span className="text-[9px] px-1.5 py-0.5 rounded font-mono bg-[oklch(84%_0.19_80.46/0.08)] text-[oklch(84%_0.12_80.46)] border border-[oklch(84%_0.19_80.46/0.1)]">{video.quality}</span>
+                            <span className="text-white/20 text-[9px] font-mono">{video.duration}</span>
+                          </div>
+                        </div>
+                        <ChevronRight className="w-4 h-4 text-white/15 group-hover:text-[oklch(84%_0.19_80.46)] transition-colors" />
+                      </div>
+                    </div>
+                  </motion.div>
+                )
+              })}
+            </div>
+          </section>
+        )}
+
         {/* ─── Series Filter ────────────────────────────────────────── */}
         <section className="mb-8">
-          <div className="flex items-center gap-2 mb-4">
-            <Eye className="w-4 h-4 text-[oklch(84%_0.19_80.46)]" />
-            <span className="text-xs font-mono text-[oklch(84%_0.15_80.46)] tracking-[0.15em] uppercase">Browse by Series</span>
-            <div className="flex-1 h-px bg-[oklch(84%_0.19_80.46/0.1)] ml-2" />
+          <div className="flex items-center gap-2.5 mb-5">
+            <Layers className="w-4 h-4 text-[oklch(84%_0.19_80.46)]" />
+            <span className="text-xs font-mono text-[oklch(84%_0.15_80.46)] tracking-[0.2em] uppercase">Browse by Series</span>
+            <div className="flex-1 h-px bg-gradient-to-r from-[oklch(84%_0.19_80.46/0.2)] to-transparent ml-2" />
           </div>
           <div className="flex flex-wrap gap-2">
             {allSeries.map((category) => {
@@ -693,14 +817,14 @@ export default function Home() {
               const config = category !== 'All' ? seriesConfig[category] : null
               return (
                 <Button key={category} variant={isActive ? 'default' : 'outline'} onClick={() => setActiveFilter(category)}
-                  className={`rounded-lg transition-all duration-300 text-xs font-mono tracking-wider h-8 ${
+                  className={'rounded-xl transition-all duration-300 text-xs font-mono tracking-wider h-9 px-4 ' + (
                     isActive
-                      ? 'bg-[oklch(84%_0.19_80.46/0.2)] text-[oklch(84%_0.19_80.46)] border-[oklch(84%_0.19_80.46/0.25)] hover:bg-[oklch(84%_0.19_80.46/0.25)] shadow-none'
-                      : 'bg-white/[0.02] text-white/35 border-[oklch(84%_0.19_80.46/0.08)] hover:bg-white/[0.05] hover:text-white/60 hover:border-[oklch(84%_0.19_80.46/0.15)] shadow-none'
-                  }`}>
+                      ? 'bg-[oklch(84%_0.19_80.46/0.18)] text-[oklch(84%_0.19_80.46)] border-[oklch(84%_0.19_80.46/0.25)] hover:bg-[oklch(84%_0.19_80.46/0.25)] shadow-none'
+                      : 'bg-white/[0.02] text-white/30 border-[oklch(84%_0.19_80.46/0.06)] hover:bg-white/[0.05] hover:text-white/50 hover:border-[oklch(84%_0.19_80.46/0.12)] shadow-none'
+                  )}>
                   {config && <span className="mr-1.5 text-sm">{config.icon}</span>}
                   {category}
-                  <span className={`ml-1.5 text-[10px] px-1 py-0.5 rounded font-mono ${isActive ? 'bg-[oklch(84%_0.19_80.46/0.2)]' : 'bg-white/[0.05]'}`}>{count}</span>
+                  <span className={'ml-2 text-[10px] px-1.5 py-0.5 rounded-md font-mono ' + (isActive ? 'bg-[oklch(84%_0.19_80.46/0.15)]' : 'bg-white/[0.04]')}>{count}</span>
                 </Button>
               )
             })}
@@ -709,52 +833,52 @@ export default function Home() {
 
         {/* ─── Video Gallery ────────────────────────────────────────── */}
         <section>
-          <div className="flex items-center gap-2 mb-6">
+          <div className="flex items-center gap-2.5 mb-6">
             <Film className="w-4 h-4 text-[oklch(84%_0.19_80.46)]" />
-            <span className="text-xs font-mono text-[oklch(84%_0.15_80.46)] tracking-[0.15em] uppercase">
+            <span className="text-xs font-mono text-[oklch(84%_0.15_80.46)] tracking-[0.2em] uppercase">
               {activeFilter === 'All' ? 'All Videos' : activeFilter}
             </span>
-            <ChevronRight className="w-3 h-3 text-white/20" />
-            <span className="text-white/25 text-[10px] font-mono tracking-wider">{filteredVideos.length} videos</span>
-            <div className="flex-1 h-px bg-[oklch(84%_0.19_80.46/0.1)] ml-2" />
+            <ChevronRight className="w-3 h-3 text-white/15" />
+            <span className="text-white/20 text-[10px] font-mono tracking-wider">{filteredVideos.length} animations</span>
+            <div className="flex-1 h-px bg-gradient-to-r from-[oklch(84%_0.19_80.46/0.15)] to-transparent ml-2" />
           </div>
 
           {viewMode === 'grid' ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
               <AnimatePresence mode="popLayout">
                 {filteredVideos.map((video, index) => {
                   const config = seriesConfig[video.series]
                   return (
-                    <motion.div key={video.id} layout initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, scale: 0.95 }}
-                      transition={{ duration: 0.25, delay: index * 0.03 }} className="group cursor-pointer" onClick={() => handleVideoClick(video)}>
-                      <div className={`relative overflow-hidden rounded-lg border border-[oklch(84%_0.19_80.46/0.08)] bg-white/[0.015] backdrop-blur-sm transition-all duration-300 hover:border-[oklch(84%_0.19_80.46/0.2)] hover:bg-white/[0.03] hover:shadow-lg ${config.glow}`}>
+                    <motion.div key={video.id} layout initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, scale: 0.95 }}
+                      transition={{ duration: 0.3, delay: index * 0.04 }} className="group cursor-pointer" onClick={() => handleVideoClick(video)}>
+                      <div className={'relative overflow-hidden rounded-xl border border-[oklch(84%_0.19_80.46/0.06)] bg-white/[0.012] backdrop-blur-sm transition-all duration-500 hover:border-[oklch(84%_0.19_80.46/0.2)] hover:bg-white/[0.025] hover:shadow-xl ' + config.glow}>
                         {/* Thumbnail */}
                         <div className="relative aspect-video overflow-hidden">
                           <VideoThumbnail video={video} className="absolute inset-0 transition-transform duration-700 group-hover:scale-105" />
                         </div>
                         {/* Content */}
-                        <div className="p-3">
-                          <h3 className="font-medium text-white/85 text-sm group-hover:text-[oklch(84%_0.19_80.46)] transition-colors duration-300 truncate tracking-wide">
+                        <div className="p-4">
+                          <h3 className="font-semibold text-white/85 text-sm group-hover:text-[oklch(84%_0.19_80.46)] transition-colors duration-300 truncate tracking-wide">
                             {video.title}
                           </h3>
-                          <p className="text-white/25 text-[11px] mt-1 line-clamp-1 font-light">{video.description}</p>
-                          <div className="flex items-center gap-1.5 mt-2.5">
-                            <span className={`text-[9px] px-1.5 py-0.5 rounded ${config.bg} ${config.color} border ${config.border} font-medium tracking-wide`}>
+                          <p className="text-white/20 text-[11px] mt-1.5 line-clamp-1 font-light leading-relaxed">{video.description}</p>
+                          <div className="flex items-center gap-2 mt-3">
+                            <span className={'text-[9px] px-2 py-0.5 rounded-md ' + config.bg + ' ' + config.color + ' border ' + config.border + ' font-medium tracking-wide'}>
                               {video.series}
                             </span>
-                            <span className="text-white/15 text-[9px]">·</span>
-                            <span className="text-white/25 text-[10px] font-mono flex items-center gap-0.5 tracking-wider">
+                            <span className="text-white/10 text-[9px]">·</span>
+                            <span className="text-white/20 text-[10px] font-mono flex items-center gap-1 tracking-wider">
                               <Clock className="w-2.5 h-2.5" />{video.duration}
                             </span>
-                            <span className="text-white/15 text-[9px]">·</span>
-                            <span className="text-[9px] px-1.5 py-0.5 rounded font-mono tracking-wider bg-[oklch(84%_0.19_80.46/0.08)] text-[oklch(84%_0.12_80.46)] border border-[oklch(84%_0.19_80.46/0.1)]">
+                            <span className="text-white/10 text-[9px]">·</span>
+                            <span className="text-[9px] px-2 py-0.5 rounded-md font-mono tracking-wider bg-[oklch(84%_0.19_80.46/0.06)] text-[oklch(84%_0.12_80.46)] border border-[oklch(84%_0.19_80.46/0.08)]">
                               {video.quality}
                             </span>
                           </div>
                         </div>
-                        {/* Hover glow */}
-                        <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                          <div className="absolute -inset-px rounded-lg bg-gradient-to-br from-[oklch(84%_0.19_80.46/0.08)] via-transparent to-[oklch(84%_0.19_80.46/0.04)]" />
+                        {/* Hover glow overlay */}
+                        <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                          <div className="absolute -inset-px rounded-xl bg-gradient-to-br from-[oklch(84%_0.19_80.46/0.06)] via-transparent to-[oklch(84%_0.19_80.46/0.03)]" />
                         </div>
                       </div>
                     </motion.div>
@@ -770,26 +894,27 @@ export default function Home() {
                   return (
                     <motion.div key={video.id} layout initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, scale: 0.95 }}
                       transition={{ duration: 0.2, delay: index * 0.02 }} className="group cursor-pointer" onClick={() => handleVideoClick(video)}>
-                      <div className="flex items-center gap-4 p-3 rounded-lg border border-[oklch(84%_0.19_80.46/0.06)] bg-white/[0.01] hover:bg-white/[0.03] hover:border-[oklch(84%_0.19_80.46/0.15)] transition-all duration-300">
+                      <div className="flex items-center gap-5 p-4 rounded-xl border border-[oklch(84%_0.19_80.46/0.05)] bg-white/[0.01] hover:bg-white/[0.025] hover:border-[oklch(84%_0.19_80.46/0.15)] transition-all duration-300">
                         {/* Mini thumbnail */}
-                        <div className="relative w-28 h-16 rounded-md overflow-hidden flex-shrink-0">
-                          <div className={`absolute inset-0 bg-gradient-to-br ${config.gradient}`} />
+                        <div className="relative w-32 h-20 rounded-lg overflow-hidden flex-shrink-0">
+                          <div className={'absolute inset-0 bg-gradient-to-br ' + config.gradient} />
                           <div className="absolute inset-0 flex items-center justify-center">
-                            <Play className="w-5 h-5 text-white/40" />
+                            <Play className="w-6 h-6 text-white/40" />
                           </div>
-                          <div className="absolute bottom-1 right-1 text-[8px] px-1 py-0.5 rounded bg-black/60 text-white/70 font-mono">{video.duration}</div>
+                          <div className="absolute bottom-1.5 right-1.5 text-[8px] px-1.5 py-0.5 rounded-md bg-black/60 text-white/70 font-mono">{video.duration}</div>
                         </div>
                         {/* Info */}
                         <div className="flex-1 min-w-0">
-                          <h3 className="text-sm font-medium text-white/80 group-hover:text-[oklch(84%_0.19_80.46)] transition-colors truncate">{video.title}</h3>
-                          <p className="text-[11px] text-white/25 mt-0.5 line-clamp-1">{video.description}</p>
-                          <div className="flex items-center gap-1.5 mt-1.5">
-                            <span className={`text-[9px] px-1.5 py-0.5 rounded ${config.bg} ${config.color} border ${config.border}`}>{video.series}</span>
-                            <span className="text-[9px] px-1.5 py-0.5 rounded font-mono bg-[oklch(84%_0.19_80.46/0.08)] text-[oklch(84%_0.12_80.46)] border border-[oklch(84%_0.19_80.46/0.1)]">{video.quality}</span>
+                          <h3 className="text-sm font-semibold text-white/80 group-hover:text-[oklch(84%_0.19_80.46)] transition-colors truncate tracking-wide">{video.title}</h3>
+                          <p className="text-[11px] text-white/20 mt-1 line-clamp-1 font-light">{video.description}</p>
+                          <div className="flex items-center gap-2 mt-2">
+                            <span className={'text-[9px] px-2 py-0.5 rounded-md ' + config.bg + ' ' + config.color + ' border ' + config.border}>{video.series}</span>
+                            <span className="text-[9px] px-2 py-0.5 rounded-md font-mono bg-[oklch(84%_0.19_80.46/0.06)] text-[oklch(84%_0.12_80.46)] border border-[oklch(84%_0.19_80.46/0.08)]">{video.quality}</span>
+                            <span className="text-white/15 text-[10px] font-mono">{video.date}</span>
                           </div>
                         </div>
-                        <div className="text-white/15 flex-shrink-0">
-                          <ChevronRight className="w-4 h-4" />
+                        <div className="text-white/10 flex-shrink-0 group-hover:text-[oklch(84%_0.19_80.46)] transition-colors">
+                          <ChevronRight className="w-5 h-5" />
                         </div>
                       </div>
                     </motion.div>
@@ -801,53 +926,58 @@ export default function Home() {
 
           {/* Empty state */}
           {filteredVideos.length === 0 && (
-            <div className="text-center py-20">
-              <Film className="w-10 h-10 text-white/10 mx-auto mb-3" />
-              <p className="text-white/25 text-sm font-mono tracking-wider">No videos found</p>
-              <p className="text-white/15 text-xs font-mono mt-1">Try a different search or filter</p>
+            <div className="text-center py-24">
+              <Film className="w-12 h-12 text-white/[0.06] mx-auto mb-4" />
+              <p className="text-white/20 text-sm font-mono tracking-wider">No animations found</p>
+              <p className="text-white/10 text-xs font-mono mt-2 tracking-wide">Try a different search or filter</p>
             </div>
           )}
         </section>
 
         {/* ─── Statistics Section ───────────────────────────────────── */}
-        <section className="mt-16 mb-8">
-          <div className="flex items-center gap-2 mb-6">
-            <Sparkles className="w-4 h-4 text-[oklch(84%_0.19_80.46)]" />
-            <span className="text-xs font-mono text-[oklch(84%_0.15_80.46)] tracking-[0.15em] uppercase">Collection Stats</span>
-            <div className="flex-1 h-px bg-[oklch(84%_0.19_80.46/0.1)] ml-2" />
+        <section className="mt-20 mb-10">
+          <div className="flex items-center gap-2.5 mb-6">
+            <TrendingUp className="w-4 h-4 text-[oklch(84%_0.19_80.46)]" />
+            <span className="text-xs font-mono text-[oklch(84%_0.15_80.46)] tracking-[0.2em] uppercase">Collection Stats</span>
+            <div className="flex-1 h-px bg-gradient-to-r from-[oklch(84%_0.19_80.46/0.2)] to-transparent ml-2" />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            <div className="p-4 rounded-lg border border-[oklch(84%_0.19_80.46/0.08)] bg-white/[0.015]">
-              <p className="text-2xl font-semibold gold-text">{videos.length}</p>
-              <p className="text-[10px] text-white/25 font-mono tracking-wider uppercase mt-1">Total Videos</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="p-5 rounded-xl border border-[oklch(84%_0.19_80.46/0.08)] bg-gradient-to-br from-[oklch(84%_0.19_80.46/0.03)] to-white/[0.005] hover:border-[oklch(84%_0.19_80.46/0.15)] transition-colors duration-300">
+              <p className="text-3xl font-bold gold-text">{videos.length}</p>
+              <p className="text-[10px] text-white/20 font-mono tracking-wider uppercase mt-2">Total Videos</p>
             </div>
-            <div className="p-4 rounded-lg border border-[oklch(84%_0.19_80.46/0.08)] bg-white/[0.015]">
-              <p className="text-2xl font-semibold text-[oklch(70%_0.12_188)]">{Object.keys(seriesConfig).length}</p>
-              <p className="text-[10px] text-white/25 font-mono tracking-wider uppercase mt-1">Series</p>
+            <div className="p-5 rounded-xl border border-[oklch(84%_0.19_80.46/0.08)] bg-gradient-to-br from-[oklch(70%_0.12_188/0.03)] to-white/[0.005] hover:border-[oklch(70%_0.12_188/0.15)] transition-colors duration-300">
+              <p className="text-3xl font-bold text-[oklch(70%_0.12_188)]">{Object.keys(seriesConfig).length}</p>
+              <p className="text-[10px] text-white/20 font-mono tracking-wider uppercase mt-2">Series</p>
             </div>
-            <div className="p-4 rounded-lg border border-[oklch(84%_0.19_80.46/0.08)] bg-white/[0.015]">
-              <p className="text-2xl font-semibold gold-text">{Math.round(videos.reduce((a, v) => a + v.durationSeconds, 0) / 60)}m</p>
-              <p className="text-[10px] text-white/25 font-mono tracking-wider uppercase mt-1">Total Duration</p>
+            <div className="p-5 rounded-xl border border-[oklch(84%_0.19_80.46/0.08)] bg-gradient-to-br from-[oklch(84%_0.19_80.46/0.03)] to-white/[0.005] hover:border-[oklch(84%_0.19_80.46/0.15)] transition-colors duration-300">
+              <p className="text-3xl font-bold gold-text">{Math.round(videos.reduce((a, v) => a + v.durationSeconds, 0) / 60)}m</p>
+              <p className="text-[10px] text-white/20 font-mono tracking-wider uppercase mt-2">Total Duration</p>
             </div>
-            <div className="p-4 rounded-lg border border-[oklch(84%_0.19_80.46/0.08)] bg-white/[0.015]">
-              <p className="text-2xl font-semibold text-[oklch(70%_0.12_188)]">{videos.filter(v => v.quality === '4K' || v.quality === '2K').length}</p>
-              <p className="text-[10px] text-white/25 font-mono tracking-wider uppercase mt-1">High-Res Videos</p>
+            <div className="p-5 rounded-xl border border-[oklch(84%_0.19_80.46/0.08)] bg-gradient-to-br from-[oklch(70%_0.12_188/0.03)] to-white/[0.005] hover:border-[oklch(70%_0.12_188/0.15)] transition-colors duration-300">
+              <p className="text-3xl font-bold text-[oklch(70%_0.12_188)]">{videos.filter(v => v.quality === '4K' || v.quality === '2K').length}</p>
+              <p className="text-[10px] text-white/20 font-mono tracking-wider uppercase mt-2">High-Res</p>
             </div>
           </div>
         </section>
 
         {/* ─── Footer ───────────────────────────────────────────────── */}
-        <footer className="pt-8 border-t border-[oklch(84%_0.19_80.46/0.08)] pb-8">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded bg-gradient-to-br from-[oklch(84%_0.19_80.46/0.2)] to-[oklch(84%_0.19_80.46/0.05)] flex items-center justify-center border border-[oklch(84%_0.19_80.46/0.15)]">
-                <Film className="w-2.5 h-2.5 text-[oklch(84%_0.19_80.46)]" />
+        <footer className="pt-10 border-t border-[oklch(84%_0.19_80.46/0.06)] pb-10">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div className="flex items-center gap-3">
+              <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[oklch(84%_0.19_80.46/0.2)] to-[oklch(84%_0.19_80.46/0.05)] flex items-center justify-center border border-[oklch(84%_0.19_80.46/0.15)]">
+                <Film className="w-3 h-3 text-[oklch(84%_0.19_80.46)]" />
               </div>
-              <span className="text-white/25 text-xs font-mono tracking-wider">3DimmAnimations Theater</span>
+              <div>
+                <span className="text-white/20 text-xs font-mono tracking-wider">3DimmAnimations Theater</span>
+                <p className="text-white/10 text-[9px] font-mono tracking-wider mt-0.5">All animations created by 3DimmAnimations</p>
+              </div>
             </div>
-            <p className="text-white/15 text-[10px] font-mono tracking-wider">
-              All animations created by 3DimmAnimations · Fan-made gallery
-            </p>
+            <div className="flex items-center gap-4">
+              <span className="text-white/10 text-[9px] font-mono tracking-wider">Fan-made gallery</span>
+              <div className="w-px h-3 bg-[oklch(84%_0.19_80.46/0.1)]" />
+              <span className="text-white/10 text-[9px] font-mono tracking-wider">v2.0</span>
+            </div>
           </div>
         </footer>
       </main>
@@ -855,7 +985,14 @@ export default function Home() {
       {/* ─── Video Player Modal ─────────────────────────────────────── */}
       <AnimatePresence>
         {playingVideo && (
-          <VideoPlayer video={playingVideo} onClose={() => setPlayingVideo(null)} />
+          <VideoPlayer
+            video={playingVideo}
+            onClose={() => setPlayingVideo(null)}
+            onPrev={handlePrevVideo}
+            onNext={handleNextVideo}
+            hasPrev={playingIndex > 0}
+            hasNext={playingIndex < filteredVideos.length - 1}
+          />
         )}
       </AnimatePresence>
 
@@ -864,7 +1001,7 @@ export default function Home() {
         {showScrollTop && (
           <motion.button initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.8 }}
             onClick={scrollToTop}
-            className="fixed bottom-6 right-6 z-40 w-10 h-10 rounded-lg bg-[oklch(84%_0.19_80.46/0.15)] border border-[oklch(84%_0.19_80.46/0.2)] flex items-center justify-center text-[oklch(84%_0.19_80.46)] hover:bg-[oklch(84%_0.19_80.46/0.25)] transition-colors shadow-lg backdrop-blur-sm">
+            className="fixed bottom-6 right-6 z-40 w-11 h-11 rounded-xl bg-[oklch(84%_0.19_80.46/0.12)] border border-[oklch(84%_0.19_80.46/0.2)] flex items-center justify-center text-[oklch(84%_0.19_80.46)] hover:bg-[oklch(84%_0.19_80.46/0.2)] transition-all shadow-xl shadow-black/20 backdrop-blur-sm">
             <ArrowUp className="w-4 h-4" />
           </motion.button>
         )}
