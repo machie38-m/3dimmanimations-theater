@@ -207,3 +207,30 @@ Stage Summary:
 - All 12 CDN videos verified working
 - Additional video downloads blocked by network environment limitations
 - Identified 50+ additional 3DimmAnimations posts on kemono.cr for future additions
+
+---
+Task ID: NEW-PROJECT
+Agent: Main Agent
+Task: Create new Vercel project for 3DimmAnimations
+
+Work Log:
+- Synced local main to remote main (which had a more polished 22-video version with CDN_BASE constant)
+- Created new Vercel project via POST /v9/projects:
+  - Name: 3dimmanimations-theater
+  - Framework: nextjs
+  - Output dir: .next
+  - Region: iad1
+  - Project ID: prj_NxpZKLWjxikZ32M8B5IdPI3IRj08
+- Configured local .vercel/project.json linking to new project
+- GitHub App integration not installed for this repo, so used `vercel deploy --prod` CLI with token instead of git integration
+- Build completed in 57s (Next.js 16.2.6 / Turbopack, output=standalone)
+- Production deployment: dpl_GzgCpPPFEqf2i61FWrQdwEKrqNr5, state=READY, PROMOTED
+
+Stage Summary:
+- New Vercel project: 3dimmanimations-theater (prj_NxpZKLWjxikZ32M8B5IdPI3IRj08)
+- Production URL: https://3dimmanimations-theater.vercel.app/
+- Alt URL: https://3dimmanimations-theater-7jmv7zsxr-machie38-ms-projects.vercel.app
+- Deployment: dpl_GzgCpPPFEqf2i61FWrQdwEKrqNr5
+- 22 authentic 3DimmAnimations videos already wired up via raw.githubusercontent CDN (video-store branch)
+- Site returns HTTP 200 with 144KB HTML containing all video metadata (Eula, Ganyu, Hu Tao, Mona, Yae, Bunny Bar x3, Silver Wolf, Hook, Takagi, Aharen, Kokkoro)
+- To deploy updates: `cd /home/z/my-project && VERCEL_TOKEN=... npx vercel deploy --prod --token=...`
