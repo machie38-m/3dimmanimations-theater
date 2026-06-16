@@ -27,7 +27,7 @@ import { Slider } from '@/components/ui/slider'
 interface VideoData {
   id: string
   title: string
-  series: 'Takagi-san' | 'Genshin Impact' | 'Honkai Star Rail' | 'Aharen-san' | 'Princess Connect' | 'Cyberpunk'
+  series: 'Takagi-san' | 'Genshin Impact' | 'Honkai Star Rail' | 'Aharen-san' | 'Princess Connect'
   duration: string
   durationSeconds: number
   isExternal: boolean
@@ -48,7 +48,7 @@ const videos: VideoData[] = [
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Bunny_Bar_1_Klee.mp4',
     description: 'Bunny Bar Special Part 1 featuring Klee. Classic Bunny Bar series by 3DimmAnimations.',
-    quality: '360p',
+    quality: '720p',
   },
   {
     id: 'bunny-bar-2-diona',
@@ -59,7 +59,7 @@ const videos: VideoData[] = [
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Bunny_Bar_2_Diona.mp4',
     description: 'Bunny Bar Special Part 2 featuring Diona. The second installment of the Bunny Bar series.',
-    quality: '360p',
+    quality: '720p',
   },
   {
     id: 'bunny-bar-3-qiqi',
@@ -81,7 +81,7 @@ const videos: VideoData[] = [
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Hook_Missionary.mp4',
     description: 'Hook from Honkai Star Rail in a missionary position animation by 3DimmAnimations.',
-    quality: '360p',
+    quality: '720p',
   },
   {
     id: 'takagi-chii-2k',
@@ -92,7 +92,7 @@ const videos: VideoData[] = [
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Takagi_Chi_2K.mp4',
     description: 'Takagi-san and Chii family bonding animation by 3DimmAnimations.',
-    quality: '360p',
+    quality: '720p',
   },
   {
     id: 'aharen-4k',
@@ -103,7 +103,7 @@ const videos: VideoData[] = [
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Aharen_4K.mp4',
     description: 'Aharen-san and Raidou after class nap animation by 3DimmAnimations.',
-    quality: '360p',
+    quality: '720p',
   },
   {
     id: 'eula-hilichurl-trouble',
@@ -125,7 +125,7 @@ const videos: VideoData[] = [
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Ganyu_Forest_Trouble.mp4',
     description: 'Ganyu forest fun animation by 3DimmAnimations. High quality 1080p version.',
-    quality: '1080p',
+    quality: '720p',
   },
   {
     id: 'hu-tao-riding',
@@ -147,7 +147,7 @@ const videos: VideoData[] = [
     isExternal: false,
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Hu_Tao_Dimm.mp4',
     description: 'Hu Tao animation by 3DimmAnimations. High quality 1080p version.',
-    quality: '1080p',
+    quality: '720p',
   },
   {
     id: 'kokkoro-salad',
@@ -159,17 +159,6 @@ const videos: VideoData[] = [
     file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Kokkoro_Salad.mp4',
     description: "Kokkoro and Yuuki's morning relief animation by 3DimmAnimations. Enhanced 720p quality.",
     quality: '720p',
-  },
-  {
-    id: 'rebecca-after-party',
-    title: 'Rebecca - After Party',
-    series: 'Cyberpunk',
-    duration: '0:37',
-    durationSeconds: 37,
-    isExternal: false,
-    file: 'https://raw.githubusercontent.com/machie38-m/3dimmanimations-theater/video-store/videos/Rebecca_After_Party.mp4',
-    description: 'Rebecca after party fun animation by 3DimmAnimations. High quality version.',
-    quality: '1080p',
   },
   {
     id: 'yae-gorou-shenanigans',
@@ -221,16 +210,9 @@ const seriesColors: Record<string, { bg: string; text: string; border: string; g
     gradient: 'from-violet-600 to-purple-500',
     glow: 'shadow-violet-500/25',
   },
-  'Cyberpunk': {
-    bg: 'bg-cyan-500/20',
-    text: 'text-cyan-300',
-    border: 'border-cyan-500/30',
-    gradient: 'from-cyan-600 to-blue-500',
-    glow: 'shadow-cyan-500/25',
-  },
 }
 
-const filterCategories = ['All', 'Genshin Impact', 'Honkai Star Rail', 'Takagi-san', 'Aharen-san', 'Princess Connect', 'Cyberpunk']
+const filterCategories = ['All', 'Genshin Impact', 'Honkai Star Rail', 'Takagi-san', 'Aharen-san', 'Princess Connect']
 
 // ─── Thumbnail Component ──────────────────────────────────────────────
 function VideoThumbnail({ video, className = '' }: { video: VideoData; className?: string }) {
