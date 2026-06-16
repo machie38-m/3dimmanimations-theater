@@ -184,8 +184,7 @@ const videos: VideoData[] = [
   },
 ]
 
-
- ────────────────────────────────────────────────────
+// ─── Series Colors ──────────────────────────────────────────────────
 const seriesColors: Record<string, { bg: string; text: string; border: string; gradient: string; glow: string }> = {
   'Takagi-san': {
     bg: 'bg-pink-500/20',
