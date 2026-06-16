@@ -78,38 +78,39 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+/* ─── Neo Kinpaku Dark Theme ─────────────────────────────────────────── */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: oklch(7% 0.006 95);
+  --foreground: oklch(93% 0.01 95);
+  --card: oklch(10% 0.008 95);
+  --card-foreground: oklch(93% 0.01 95);
+  --popover: oklch(10% 0.008 95);
+  --popover-foreground: oklch(93% 0.01 95);
+  --primary: oklch(84% 0.19 80.46);
+  --primary-foreground: oklch(12% 0.02 80);
+  --secondary: oklch(15% 0.01 95);
+  --secondary-foreground: oklch(84% 0.12 80);
+  --muted: oklch(14% 0.008 95);
+  --muted-foreground: oklch(60% 0.02 95);
+  --accent: oklch(70% 0.12 188);
+  --accent-foreground: oklch(93% 0.02 188);
+  --destructive: oklch(704% 0.191 22.216);
+  --border: oklch(84% 0.19 80.46 / 15%);
+  --input: oklch(84% 0.19 80.46 / 12%);
+  --ring: oklch(84% 0.19 80.46 / 40%);
+  --chart-1: oklch(84% 0.19 80.46);
+  --chart-2: oklch(70% 0.12 188);
+  --chart-3: oklch(60% 0.15 300);
+  --chart-4: oklch(75% 0.16 60);
+  --chart-5: oklch(80% 0.14 150);
+  --sidebar: oklch(10% 0.008 95);
+  --sidebar-foreground: oklch(93% 0.01 95);
+  --sidebar-primary: oklch(84% 0.19 80.46);
+  --sidebar-primary-foreground: oklch(12% 0.02 80);
+  --sidebar-accent: oklch(15% 0.01 95);
+  --sidebar-accent-foreground: oklch(84% 0.12 80);
+  --sidebar-border: oklch(84% 0.19 80.46 / 15%);
+  --sidebar-ring: oklch(84% 0.19 80.46 / 40%);
 }
 
 @layer base {
@@ -119,4 +120,59 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* ─── Kinpaku Gold Custom Utilities ────────────────────────────────────── */
+@layer utilities {
+  .gold-text {
+    background: linear-gradient(135deg, oklch(84% 0.19 80.46), oklch(90% 0.12 75), oklch(84% 0.19 80.46));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .gold-border {
+    border-color: oklch(84% 0.19 80.46 / 20%);
+  }
+  .gold-glow {
+    box-shadow: 0 0 20px oklch(84% 0.19 80.46 / 15%), 0 0 60px oklch(84% 0.19 80.46 / 5%);
+  }
+  .lacquer-surface {
+    background: linear-gradient(180deg, oklch(12% 0.01 95), oklch(7% 0.006 95));
+  }
+  .hairline-gold {
+    border-width: 0.5px;
+    border-color: oklch(84% 0.19 80.46 / 25%);
+  }
+  .patina-accent {
+    color: oklch(70% 0.12 188);
+  }
+  .patina-bg {
+    background-color: oklch(70% 0.12 188 / 10%);
+  }
+}
+
+/* ─── Scrollbar Styling ──────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: oklch(7% 0.006 95);
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(84% 0.19 80.46 / 25%);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(84% 0.19 80.46 / 40%);
+}
+
+/* ─── Smooth scroll ───────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ─── Custom Selection ────────────────────────────────────────────────── */
+::selection {
+  background: oklch(84% 0.19 80.46 / 25%);
+  color: oklch(93% 0.01 95);
 }
